@@ -1,0 +1,162 @@
+:root {
+    --color-black-5: #000000;
+    --color-black-10: #FFFFFF;
+    --color-black-50: #FFFFFF;
+    --color-black-90: #FFFFFF;
+}
+
+* {
+    font-family: "IntoneMono NF Medium", "Intel One Mono Medium", "Consolas", sans-serif !important;
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea,
+.input-base,
+.form-control,
+.form-control:focus {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.input-base {
+    margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #FFFFFF;
+}
+
+table,
+table td,
+table tr,
+table th,
+table thead,
+table tbody,
+table tfoot {
+    border: 1px solid #FFFFFF;
+}
+
+table th,
+table thead {
+    padding: 5px;
+}
+
+.bg-primary,
+.navbar-inverse {
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    border-color: #ffffff !important;
+}
+
+.nav-link:hover {
+    background-color: #606060 !important;
+}
+
+.breadcrumb,
+.breadcrumb-item {
+    background-color: #696969 !important;
+    color: #FFFFFF !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: #FFFFFF !important;
+}
+
+.tw-bg-white,
+.tw-bg-white-100 {
+    background-color: #333333 !important;
+}
+
+.tw-border-black-10 {
+    border-color: #FFFFFF;
+}
+
+/* Money */
+.drhYCx {
+    display: none !important;
+}
+
+.surge-wysiwyg h1,
+.surge-wysiwyg h2,
+.surge-wysiwyg h3,
+.surge-wysiwyg h4,
+.surge-wysiwyg h5,
+.surge-wysiwyg h6,
+.surge-wysiwyg strong,
+.surge-wysiwyg b {
+    color: #FFFFFF;
+}
+
+.surge-wysiwyg span[style*="color: rgb(0, 0, 0)"] {
+    color: #FFFFFF !important;
+}
+
+.surge-wysiwyg span[style*="color: rgb(204, 0, 0)"] {
+    color: #FF0000 !important;
+}
+
+.surge-wysiwyg span[style*="color: rgb(60, 120, 216)"] {
+    color: #0080FF !important;
+}
+
+.timer {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+}
+
+.hkgXCF {
+    border: 1px solid #ffffff;
+}
+
+/* Work on projects */
+.dAOGex::after,
+.dAOGex::before {
+    background: none;
+}
+
+/* Report time */
+.khGHHp::after,
+.khGHHp::before {
+    background: none;
+}
+
+.khGHHp {
+    border: 1px solid #ffffff;
+}
+
+.khGHHp [role="cell"] {
+    border: 1px solid #ffffff;
+}
+
+[role="dialog"] .tw-bg-black-50 {
+    background-color: #333333;
+}
+
+[role="dialog"] .tw-bg-white-100,
+[role="dialog"] .tw-bg-white {
+    background-color: #000000 !important;
+}
+
+[role="dialog"] button {
+    border: 1px solid #ffffff;
+}
+
+[role="dialog"] button div {
+    background-color: transparent;
+}
