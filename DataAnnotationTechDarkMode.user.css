@@ -87,41 +87,9 @@ table thead {
     border-color: #FFFFFF;
 }
 
-/* Money */
+/* Money widget */
 .drhYCx {
     display: none !important;
-}
-
-.surge-wysiwyg h1,
-.surge-wysiwyg h2,
-.surge-wysiwyg h3,
-.surge-wysiwyg h4,
-.surge-wysiwyg h5,
-.surge-wysiwyg h6,
-.surge-wysiwyg strong,
-.surge-wysiwyg b {
-    color: #FFFFFF;
-}
-
-.surge-wysiwyg span[style*="color: rgb(0, 0, 0)"] {
-    color: #FFFFFF !important;
-}
-
-.surge-wysiwyg span[style*="color: rgb(204, 0, 0)"] {
-    color: #FF0000 !important;
-}
-
-.surge-wysiwyg span[style*="color: rgb(60, 120, 216)"] {
-    color: #0080FF !important;
-}
-
-.timer {
-    background-color: #000000;
-    border: 2px solid #ffffff;
-}
-
-.hkgXCF {
-    border: 1px solid #ffffff;
 }
 
 /* Work on projects */
@@ -159,4 +127,67 @@ table thead {
 
 [role="dialog"] button div {
     background-color: transparent;
+}
+
+/* Tasks */
+.surge-wysiwyg h1,
+.surge-wysiwyg h2,
+.surge-wysiwyg h3,
+.surge-wysiwyg h4,
+.surge-wysiwyg h5,
+.surge-wysiwyg h6,
+.surge-wysiwyg strong,
+.surge-wysiwyg b {
+    color: #FFFFFF;
+}
+
+.surge-wysiwyg span[style*="color: rgb(0, 0, 0)"] {
+    color: #FFFFFF !important;
+}
+
+.surge-wysiwyg span[style*="color: rgb(204, 0, 0)"] {
+    color: #FF0000 !important;
+}
+
+.surge-wysiwyg span[style*="color: rgb(60, 120, 216)"] {
+    color: #0080FF !important;
+}
+
+.timer {
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    z-index: 999 !important;
+}
+
+.hkgXCF {
+    border: 1px solid #ffffff;
+}
+
+p[style*="color: black"],
+p[style*="color: rgb(0, 0, 0)"] {
+    color: #FFFFFF !important;
+}
+
+span[style*="color: rgb(103, 78, 167)"] {
+    color: #FFFFFF !important;
+}
+
+.surge-wysiwyg code {
+    color: #e83e8c;
+}
+
+pre {
+    color: #FFFFFF;
+}
+
+mark[style*="background-color: rgb(250, 194, 194)"] {
+    background-color: #606060 !important;
+}
+
+span[style*="color: rgba(0, 0, 0, 0.87)"] {
+    color: #FFFFFF !important;
+}
+
+span[style*="color: rgb(68, 71, 70)"] {
+    color: #FFFFFF !important;
 }
