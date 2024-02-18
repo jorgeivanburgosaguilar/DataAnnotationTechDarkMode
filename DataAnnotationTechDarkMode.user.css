@@ -6,10 +6,12 @@
   --border-primary: 1px solid #FFFFFF;
   --border-secondary: 1px solid #606060;
   --text-primary: #FFFFFF;
-  --text-secondary: #606060;
-  --text-active: #0080FF;
+  --text-secondary: #C0C0C0;
+  --text-active: #0000CC;
   --text-red: #FF0000;
   --text-blue: #0080FF;
+  --table-padding: 5px;
+  --display-money: none;
 }
 
 * {
@@ -41,16 +43,9 @@ select,
 optgroup,
 option,
 pre,
-code,
-.input-base,
-.form-control,
-.form-control:focus {
+code {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
-}
-
-.input-base {
-  margin-bottom: 5px;
 }
 
 h1,
@@ -58,7 +53,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
   color: var(--text-primary);
 }
 
@@ -77,7 +73,31 @@ table tfoot {
 table th,
 table thead,
 table tfoot {
-  padding: 5px !important;
+  padding: var(--table-padding) !important;
+}
+
+/* Forms */
+.input-base,
+.form-control,
+.form-control:focus {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.input-base {
+  margin-bottom: 5px;
+}
+
+/* Money widget */
+.drhYCx {
+  display: var(--display-money) !important;
+}
+
+/* Timer widget */
+.timer {
+  background-color: var(--bg-primary);
+  border: var(--border-primary);
+  z-index: 999 !important;
 }
 
 /* Navbar */
@@ -106,18 +126,6 @@ a.navbar-brand {
   color: var(--text-primary) !important;
 }
 
-/* Money widget */
-.drhYCx {
-  display: none !important;
-}
-
-/* Timer widget */
-.timer {
-  background-color: var(--bg-primary);
-  border: var(--border-primary);
-  z-index: 999 !important;
-}
-
 /* Work on projects */
 .dAOGex::after,
 .dAOGex::before {
@@ -135,13 +143,20 @@ a.navbar-brand {
 }
 
 /* Tasks */
-.kbTkQg *,
-.surge-wysiwyg * {
+.kbTkQg * {
   color: var(--text-primary);
 }
 
-.kbTkQg mark[style*="background-color: rgb(255, 217, 102)"] {
+.hkgXCF {
+  border: var(--border-secondary);
+}
+
+.kbTkQg mark {
   background-color: var(--bg-secondary) !important;
+}
+
+.kbTkQg code {
+  color: inherit;
 }
 
 .kbTkQg button.tw-bg-white,
@@ -163,11 +178,21 @@ a.navbar-brand {
 .kbTkQg *[style*="color: rgb(0, 0, 0)"],
 .kbTkQg *[style*="color: black"],
 .kbTkQg *[style*="color: rgb(0, 0, 0)"],
-.kbTkQg *[style*="color: rgb(103, 78, 167)"] {
+.kbTkQg *[style*="color: rgb(103, 78, 167)"],
+.kbTkQg *[style*="color: rgb(29, 28, 29)"],
+.kbTkQg *[style*="color: rgb(52, 53, 65)"],
+.kbTkQg *[style*="color: rgb(68, 71, 70)"] {
   color: var(--text-primary) !important;
 }
 
-.kbTkQg *[style*="color: rgb(204, 0, 0)"] {
+.kbTkQg *[style*="background-color: rgb(206, 231, 247)"],
+.kbTkQg *[style*="background-color: rgb(214, 239, 214)"] {
+  background-color: var(--bg-secondary) !important;
+}
+
+.kbTkQg *[style*="color: rgb(204, 0, 0)"],
+.kbTkQg *[style*="color: rgb(204, 65, 37)"],
+.kbTkQg *[style*="color: rgb(166, 28, 0)"] {
   color: var(--text-red) !important;
 }
 
@@ -175,6 +200,62 @@ a.navbar-brand {
   color: var(--text-blue) !important;
 }
 
-.hkgXCF {
-  border: var(--border-secondary);
+.kbTkQg table,
+.kbTkQg table td,
+.kbTkQg table tr,
+.kbTkQg table th,
+.kbTkQg table thead,
+.kbTkQg table tbody,
+.kbTkQg table tfoot {
+  border: var(--border-primary);
+}
+
+.kbTkQg table td {
+  word-break: break-all;
+}
+
+/* Report time */
+.tw-text-gray-500,
+.tw-text-black-80,
+.tw-text-black-90 {
+  color: inherit;
+}
+
+.tw-text-size-table-header {
+  padding: var(--table-padding);
+}
+
+.khGHHp::after,
+.khGHHp::before {
+  background: none;
+}
+
+.khGHHp {
+  border: var(--border-primary);
+}
+
+.khGHHp [role="cell"] {
+  border: var(--border-primary);
+}
+
+[role="dialog"] .tw-bg-black-50 {
+  background-color: var(--bg-secondary);
+}
+
+[role="dialog"] .tw-bg-white-100,
+[role="dialog"] .tw-bg-white {
+  background-color: var(--bg-primary) !important;
+}
+
+[role="dialog"] button {
+  border: var(--border-primary);
+}
+
+/* Transfer funds */
+.card {
+  background-color: var(--bg-secondary);
+}
+
+.tw-bg-neutral-100 {
+  background-color: inherit;
 }
