@@ -2,7 +2,9 @@
 
 Work in progress
 
+## Installation
+https://userstyles.world/style/14468/data-annotation-tech-dark-mode
+
 ## Missing Pages
-- Transfer funds: Pagination section from Transfer Funds
 - Inbox
 - Tasks: More styles for custom background-color styles.
