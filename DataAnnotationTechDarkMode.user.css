@@ -1,8 +1,10 @@
 :root {
-  --font-primary: "IntoneMono NF Medium", "Intel One Mono Medium", "Consolas", sans-serif;
+  --font-primary: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-secondary: "IntoneMono NF Medium", "Intel One Mono Medium", Consolas, Roboto, sans-serif;
   --bg-primary: #000000;
   --bg-secondary: #333333;
   --bg-ternary: #696969;
+  --bg-highlight: #540707;
   --border-primary: 1px solid #FFFFFF;
   --border-secondary: 1px solid #606060;
   --text-primary: #FFFFFF;
@@ -42,9 +44,13 @@ textarea,
 select,
 optgroup,
 option,
-pre,
-code {
+pre {
   background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+code {
+  background-color: var(--bg-ternary);
   color: var(--text-primary);
 }
 
@@ -129,7 +135,7 @@ a.navbar-brand {
 /* Work on projects */
 .dAOGex::after,
 .dAOGex::before {
-  background: none;
+  background: none !important;
 }
 
 .dAOGex .tw-text-black-90,
@@ -152,7 +158,7 @@ a.navbar-brand {
 }
 
 .kbTkQg mark {
-  background-color: var(--bg-secondary) !important;
+  background-color: var(--bg-highlight) !important;
 }
 
 .kbTkQg code {
@@ -215,10 +221,20 @@ a.navbar-brand {
 }
 
 /* Report time */
-.tw-text-gray-500,
+.tw-text-black,
+.tw-text-black:hover,
+.tw-text-black-10,
+.tw-text-black-50,
 .tw-text-black-80,
-.tw-text-black-90 {
+.tw-text-black-90,
+.tw-text-black-100,
+.tw-text-gray-500,
+.tw-text-gray-700 {
   color: inherit;
+}
+
+.tw-bg-gray-100:hover {
+  background-color: var(--bg-ternary);
 }
 
 .tw-text-size-table-header {
@@ -227,7 +243,7 @@ a.navbar-brand {
 
 .khGHHp::after,
 .khGHHp::before {
-  background: none;
+  background: none !important;
 }
 
 .khGHHp {
