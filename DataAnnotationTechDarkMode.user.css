@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240220.0902
+@version      20240220.1602
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -19,7 +19,7 @@
     --border-secondary: 1px solid #606060;
     --text-primary: #FFFFFF;
     --text-secondary: #C0C0C0;
-    --text-active: #0000CC;
+    --text-active: #3366CC;
     --text-red: #FF0000;
     --text-blue: #0080FF;
     --check-color: #000000;
@@ -199,9 +199,9 @@
     border: var(--border-primary);
   }
 
-  .kbTkQg *[style*="color: rgb(0, 0, 0)"],
   .kbTkQg *[style*="color: black"],
   .kbTkQg *[style*="color: rgb(0, 0, 0)"],
+  .kbTkQg *[style*="color: rgba(0, 0, 0, 0.85)"],
   .kbTkQg *[style*="color: rgb(103, 78, 167)"],
   .kbTkQg *[style*="color: rgb(29, 28, 29)"],
   .kbTkQg *[style*="color: rgb(52, 53, 65)"],
@@ -221,6 +221,11 @@
 
   .kbTkQg *[style*="background-color: palegreen"] {
     background-color: var(--bg-green) !important;
+    opacity: 1 !important;
+  }
+
+  .kbTkQg *[style*="background-color: lightgray"] {
+    background-color: var(--bg-secondary) !important;
     opacity: 1 !important;
   }
 
@@ -246,6 +251,17 @@
 
   .kbTkQg table td {
     word-break: break-all;
+  }
+
+  .kbTkQg .css-13cymwt-control,
+  .kbTkQg .Select__control,
+  .kbTkQg .css-1nmdiq5-menu {
+    background-color: var(--bg-secondary) !important;
+    border: var(--border-primary);
+  }
+
+  .kbTkQg .css-1nmdiq5-menu div:hover {
+    color: var(--text-active);
   }
 
   /* Report time */
