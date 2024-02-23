@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240220.1602
+@version      20240223.0932
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -99,6 +99,12 @@
   .form-control:focus {
     background-color: var(--bg-secondary);
     color: var(--text-primary);
+  }
+
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: var(--bg-secondary);
+    opacity: 0.75;
   }
 
   .input-base {
@@ -311,6 +317,13 @@
     border: var(--border-primary);
   }
 
+  .tw-border-black-30,
+  .tw-border-black-40,
+  .tw-border-black-30:hover,
+  .tw-border-black-40:hover {
+    border: var(--border-secondary);
+  }
+
   /* Transfer funds */
   .card {
     background-color: var(--bg-secondary);
@@ -318,5 +331,32 @@
 
   .tw-bg-neutral-100 {
     background-color: inherit;
+  }
+
+  /* Inbox */
+  .tw-bg-white-90,
+  .tw-bg-gray-100 {
+    background-color: var(--bg-secondary);
+  }
+
+  .tw-text-black-40,
+  .tw-text-gray-600,
+  .tw-text-gray-500 {
+    color: inherit;
+  }
+
+  /* Profile */
+  .btn-default {
+    background-color: var(--bg-secondary);
+    color: inherit;
+  }
+
+  .btn-default:hover {
+    background-color: var(--bg-ternary);
+    color: inherit;
+  }
+
+  .fa {
+    font: normal normal normal 14px/1 FontAwesome !important;
   }
 }
