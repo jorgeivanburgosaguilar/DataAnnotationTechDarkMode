@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240223.0932
+@version      20240225.1045
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -268,6 +268,26 @@
 
   .kbTkQg .css-1nmdiq5-menu div:hover {
     color: var(--text-active);
+  }
+
+  .cm-editor {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+
+  .cm-gutters,
+  .cm-activeLineGutter {
+    background-color: var(--bg-ternary) !important;
+  }
+
+  .cm-gutters {
+    border-right: var(--border-secondary) !important;
+  }
+
+  .cm-content,
+  .cm-line,
+  .cm-activeLine {
+    caret-color: var(--text-primary) !important;
   }
 
   /* Report time */
