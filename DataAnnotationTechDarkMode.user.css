@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240225.1045
+@version      20240227.0612
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -210,6 +210,7 @@
   .kbTkQg *[style*="color: rgba(0, 0, 0, 0.85)"],
   .kbTkQg *[style*="color: rgb(103, 78, 167)"],
   .kbTkQg *[style*="color: rgb(29, 28, 29)"],
+  .kbTkQg *[style*="color: rgb(33, 33, 33)"],
   .kbTkQg *[style*="color: rgb(52, 53, 65)"],
   .kbTkQg *[style*="color: rgb(68, 71, 70)"] {
     color: var(--text-primary) !important;
@@ -233,6 +234,15 @@
   .kbTkQg *[style*="background-color: lightgray"] {
     background-color: var(--bg-secondary) !important;
     opacity: 1 !important;
+  }
+
+  .kbTkQg *[style*="background-color: lemonchiffon"] {
+    background-color: var(--bg-secondary) !important;
+    opacity: 0.4 !important;
+  }
+
+  .kbTkQg .chat-history code {
+    background-color: transparent;
   }
 
   .kbTkQg *[style*="color: rgb(204, 0, 0)"],
