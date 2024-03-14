@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240312.1153
+@version      20240314.1144
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -112,7 +112,7 @@
   }
 
   /* Money widget */
-  .cGlxDm {
+  .jjFDbt {
     display: var(--display-money) !important;
   }
 
@@ -150,14 +150,9 @@
   }
 
   /* Work on projects */
-  .dAOGex::after,
-  .dAOGex::before {
+  .bhLAXM::after,
+  .bhLAXM::before {
     background: none !important;
-  }
-
-  .dAOGex .tw-text-black-90,
-  .dAOGex .tw-text-black-80 {
-    color: var(--text-primary) !important;
   }
 
   .tw-bg-white,
@@ -166,118 +161,118 @@
   }
 
   /* Tasks */
-  .kbTkQg * {
+  .QpAxQ * {
     color: var(--text-primary);
   }
 
-  .hkgXCF {
+  .dqlWPE {
     border: var(--border-secondary);
     word-break: break-all;
   }
 
-  .kbTkQg mark {
+  .QpAxQ mark {
     background-color: var(--bg-highlight) !important;
   }
 
-  .kbTkQg code {
+  .QpAxQ code {
     color: inherit;
   }
 
-  .kbTkQg button.tw-bg-white,
-  .kbTkQg button.tw-bg-white-100 {
+  .QpAxQ button.tw-bg-white,
+  .QpAxQ button.tw-bg-white-100 {
     background-color: var(--bg-ternary);
   }
 
-  .kbTkQg h1,
-  .kbTkQg h2,
-  .kbTkQg h3,
-  .kbTkQg h4,
-  .kbTkQg h5,
-  .kbTkQg h6,
-  .kbTkQg strong,
-  .kbTkQg b {
+  .QpAxQ h1,
+  .QpAxQ h2,
+  .QpAxQ h3,
+  .QpAxQ h4,
+  .QpAxQ h5,
+  .QpAxQ h6,
+  .QpAxQ strong,
+  .QpAxQ b {
     color: var(--text-primary);
   }
 
-  .kbTkQg input[type="radio"],
-  .kbTkQg input[type="checkbox"] {
+  .QpAxQ input[type="radio"],
+  .QpAxQ input[type="checkbox"] {
     color: var(--check-color);
     border: var(--border-primary);
   }
 
-  .kbTkQg *[style*="color: black"],
-  .kbTkQg *[style*="color: rgb(0, 0, 0)"],
-  .kbTkQg *[style*="color: rgba(0, 0, 0, 0.85)"],
-  .kbTkQg *[style*="color: rgb(103, 78, 167)"],
-  .kbTkQg *[style*="color: rgb(17, 24, 39)"],
-  .kbTkQg *[style*="color: rgb(29, 28, 29)"],
-  .kbTkQg *[style*="color: rgb(33, 33, 33)"],
-  .kbTkQg *[style*="color: rgb(52, 53, 65)"],
-  .kbTkQg *[style*="color: rgb(68, 71, 70)"] {
+  .QpAxQ *[style*="color: black"],
+  .QpAxQ *[style*="color: rgb(0, 0, 0)"],
+  .QpAxQ *[style*="color: rgba(0, 0, 0, 0.85)"],
+  .QpAxQ *[style*="color: rgb(103, 78, 167)"],
+  .QpAxQ *[style*="color: rgb(17, 24, 39)"],
+  .QpAxQ *[style*="color: rgb(29, 28, 29)"],
+  .QpAxQ *[style*="color: rgb(33, 33, 33)"],
+  .QpAxQ *[style*="color: rgb(52, 53, 65)"],
+  .QpAxQ *[style*="color: rgb(68, 71, 70)"] {
     color: var(--text-primary) !important;
   }
 
-  .kbTkQg *[style*="background-color: rgb(206, 231, 247)"],
-  .kbTkQg *[style*="background-color: rgb(214, 239, 214)"] {
+  .QpAxQ *[style*="background-color: rgb(206, 231, 247)"],
+  .QpAxQ *[style*="background-color: rgb(214, 239, 214)"] {
     background-color: var(--bg-secondary) !important;
   }
 
-  .kbTkQg *[style*="background-color: lightskyblue"] {
+  .QpAxQ *[style*="background-color: lightskyblue"] {
     background-color: var(--bg-blue) !important;
     opacity: 1 !important;
   }
 
-  .kbTkQg *[style*="background-color: palegreen"] {
+  .QpAxQ *[style*="background-color: palegreen"] {
     background-color: var(--bg-green) !important;
     opacity: 1 !important;
   }
 
-  .kbTkQg *[style*="background-color: lightgray"] {
+  .QpAxQ *[style*="background-color: lightgray"] {
     background-color: var(--bg-secondary) !important;
     opacity: 1 !important;
   }
 
-  .kbTkQg *[style*="background-color: lemonchiffon"] {
+  .QpAxQ *[style*="background-color: lemonchiffon"] {
     background-color: var(--bg-secondary) !important;
     opacity: 0.4 !important;
   }
 
-  .kbTkQg .chat-history code {
+  .QpAxQ .chat-history code {
     background-color: transparent;
   }
 
-  .kbTkQg *[style*="color: rgb(204, 0, 0)"],
-  .kbTkQg *[style*="color: rgb(204, 65, 37)"],
-  .kbTkQg *[style*="color: rgb(166, 28, 0)"] {
+  .QpAxQ *[style*="color: rgb(204, 0, 0)"],
+  .QpAxQ *[style*="color: rgb(204, 65, 37)"],
+  .QpAxQ *[style*="color: rgb(166, 28, 0)"] {
     color: var(--text-red) !important;
   }
 
-  .kbTkQg *[style*="color: rgb(60, 120, 216)"] {
+  .QpAxQ *[style*="color: rgb(60, 120, 216)"] {
     color: var(--text-blue) !important;
   }
 
-  .kbTkQg table,
-  .kbTkQg table td,
-  .kbTkQg table tr,
-  .kbTkQg table th,
-  .kbTkQg table thead,
-  .kbTkQg table tbody,
-  .kbTkQg table tfoot {
+  .QpAxQ table,
+  .QpAxQ table td,
+  .QpAxQ table tr,
+  .QpAxQ table th,
+  .QpAxQ table thead,
+  .QpAxQ table tbody,
+  .QpAxQ table tfoot {
     border: var(--border-primary);
   }
 
-  .kbTkQg table td {
+  .QpAxQ table td {
     word-break: break-all;
   }
 
-  .kbTkQg .css-13cymwt-control,
-  .kbTkQg .Select__control,
-  .kbTkQg .css-1nmdiq5-menu {
+  .QpAxQ .with-tailwind-u4xenr-control,
+  .QpAxQ .with-tailwind-18a0yo6-control,
+  .QpAxQ .with-tailwind-1nmdiq5-menu {
     background-color: var(--bg-secondary) !important;
     border: var(--border-primary);
   }
 
-  .kbTkQg .css-1nmdiq5-menu div:hover {
+  .QpAxQ .with-tailwind-1nmdiq5-menu div:hover {
     color: var(--text-active);
   }
 
@@ -322,16 +317,16 @@
     padding: var(--table-padding);
   }
 
-  .khGHHp::after,
-  .khGHHp::before {
+  .jRuEJK::after,
+  .jRuEJK::before {
     background: none !important;
   }
 
-  .khGHHp {
+  .jRuEJK {
     border: var(--border-primary);
   }
 
-  .khGHHp [role="cell"] {
+  .jRuEJK [role="cell"] {
     border: var(--border-primary);
   }
 
