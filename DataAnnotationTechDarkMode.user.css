@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240314.1144
+@version      20240315.1324
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -163,6 +163,10 @@
   /* Tasks */
   .QpAxQ * {
     color: var(--text-primary);
+  }
+
+  .surge-wysiwyg {
+    color: var(--text-primary) !important;
   }
 
   .dqlWPE {
