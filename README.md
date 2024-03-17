@@ -1,6 +1,6 @@
 # Data Annotation Tech Dark Mode
 
-Work in progress
+![Data Annotation Tech Dark Mode Sample Screenshot](sample.png)
 
 ## Installation
 
@@ -8,7 +8,8 @@ Work in progress
 2. Install [DataAnnotationTechDarkMode.user.css](https://userstyles.world/style/14468/data-annotation-tech-dark-mode).
 
 
-## Missing Pages
+## TODO
+- General
+  - Add configurations for the userCss like custom font, custom colors, etc.
 - Tasks
-  -  More styles for custom background-color styles.
-  -  Better word-break
+  -  More styles for custom color styles.
