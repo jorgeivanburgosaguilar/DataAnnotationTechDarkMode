@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240315.1324
+@version      20240316.2038
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -120,6 +120,8 @@
   .timer {
     background-color: var(--bg-primary);
     border: var(--border-primary);
+    padding: 10px;
+    margin-right: 2px;
     z-index: 999 !important;
   }
 
@@ -251,7 +253,8 @@
     color: var(--text-red) !important;
   }
 
-  .QpAxQ *[style*="color: rgb(60, 120, 216)"] {
+  .QpAxQ *[style*="color: rgb(60, 120, 216)"],
+  .QpAxQ *[style*="color: rgb(118, 165, 175)"] {
     color: var(--text-blue) !important;
   }
 
@@ -267,6 +270,10 @@
 
   .QpAxQ table td {
     word-break: break-all;
+  }
+
+  .QpAxQ ol > li:before {
+    color: var(--text-primary);
   }
 
   .QpAxQ .with-tailwind-u4xenr-control,
@@ -373,6 +380,12 @@
   .tw-text-gray-600,
   .tw-text-gray-500 {
     color: inherit;
+  }
+
+  #root *[style*="color: white"],
+  #root *[style*="color: rgb(248, 248, 248)"] {
+    color: var(--text-primary) !important;
+    background-color: var(--bg-primary) !important;
   }
 
   /* Profile */
