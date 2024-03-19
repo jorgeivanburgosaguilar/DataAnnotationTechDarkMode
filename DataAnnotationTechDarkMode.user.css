@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Data Annotation Tech Dark Mode
 @namespace    jorgeivanburgosaguilar
-@version      20240318.2147
+@version      20240319.1201
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -306,6 +306,11 @@
   .cm-line,
   .cm-activeLine {
     caret-color: var(--text-primary) !important;
+  }
+
+  .list-group-item {
+    background-color: var(--bg-primary);
+    border: var(--border-primary);
   }
 
   /* Report time */
