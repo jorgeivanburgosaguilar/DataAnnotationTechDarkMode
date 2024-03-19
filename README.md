@@ -10,6 +10,6 @@
 
 ## TODO
 - General
-  - Add configurations for the userCss like custom font, custom colors, etc.
+  - Add configurations for the userCss like custom colors, etc.
 - Tasks
   -  More styles for custom color styles.
