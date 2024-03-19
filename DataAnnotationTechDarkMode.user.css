@@ -1,27 +1,37 @@
 /* ==UserStyle==
-@name         Data Annotation Tech Dark Mode
-@namespace    jorgeivanburgosaguilar
-@version      20240319.1201
+@name        Data Annotation Tech Dark Mode
+@namespace   jorgeivanburgosaguilar
+@version     20240319.1338
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
+@advanced dropdown font-choice "Font" {
+  datdefault "DAT Default" <<<EOT
+  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" EOT;
+  intelonemonomedium "Intel One Mono Medium" <<<EOT
+  "IntoneMono NF Medium", "Intel One Mono Medium", monospace EOT;
+  custom "Custom" <<<EOT
+  var(--datdm-font-custom) EOT;
+}
+@advanced text font-custom "Custom Font" "Monaspace Neon", monospace
 ==/UserStyle== */
 @-moz-document url-prefix("https://app.dataannotation.tech/") {
   :root {
-    --font-primary: "IntoneMono NF Medium", "Intel One Mono Medium", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --datdm-font-custom: /*[[font-custom]]*/ ;
+    --font-primary: /*[[font-choice]]*/ ;
     --bg-primary: #000000;
     --bg-secondary: #333333;
     --bg-ternary: #696969;
     --bg-highlight: #540707;
     --bg-blue: #000099;
     --bg-green: #336600;
-    --border-primary: 1px solid #FFFFFF;
+    --border-primary: 1px solid #ffffff;
     --border-secondary: 1px solid #606060;
-    --text-primary: #FFFFFF;
-    --text-secondary: #C0C0C0;
-    --text-active: #3366CC;
-    --text-red: #FF0000;
-    --text-blue: #0080FF;
+    --text-primary: #ffffff;
+    --text-secondary: #c0c0c0;
+    --text-active: #3366cc;
+    --text-red: #ff0000;
+    --text-blue: #0080ff;
     --check-color: #000000;
     --table-padding: 5px;
     --display-money: none;
