@@ -13,12 +13,18 @@
   custom "Custom" <<<EOT
   var(--datdm-font-custom) EOT;
 }
-@advanced text font-custom "Custom Font" "Monaspace Neon", monospace
+@advanced text font-custom "Custom Font" Consolas, monospace
+@advanced dropdown show-money "Show Money Widget" {
+  money-yes "Yes" <<<EOT
+  flex EOT;
+  money-no "No" <<<EOT
+  none EOT;
+}
 ==/UserStyle== */
 @-moz-document url-prefix("https://app.dataannotation.tech/") {
   :root {
-    --datdm-font-custom: /*[[font-custom]]*/ ;
-    --font-primary: /*[[font-choice]]*/ ;
+    --datdm-font-custom: /*[[font-custom]]*/;
+    --font-primary: /*[[font-choice]]*/;
     --bg-primary: #000000;
     --bg-secondary: #333333;
     --bg-ternary: #696969;
@@ -34,7 +40,7 @@
     --text-blue: #0080ff;
     --check-color: #000000;
     --table-padding: 5px;
-    --display-money: none;
+    --display-money: /*[[show-money]]*/;
   }
 
   * {
@@ -124,6 +130,12 @@
   /* Money widget */
   .jjFDbt {
     display: var(--display-money) !important;
+    background-color: var(--bg-secondary) !important;
+    border: var(--border-secondary) !important;
+  }
+
+  .jjFDbt a {
+    text-decoration: none !important;
   }
 
   /* Timer widget */
@@ -296,6 +308,14 @@
 
   .QpAxQ .with-tailwind-1nmdiq5-menu div:hover {
     color: var(--text-active);
+  }
+
+  .QpAxQ .container {
+    background-color: var(--bg-primary);
+  }
+
+  .QpAxQ .bot-msg {
+    background-color: var(--bg-primary);
   }
 
   .cm-editor {
