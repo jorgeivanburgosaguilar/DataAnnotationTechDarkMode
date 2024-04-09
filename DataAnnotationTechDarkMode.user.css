@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     20240408.1144
+@version     20240409.1053
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -21,10 +21,11 @@
   none EOT;
 }
 ==/UserStyle== */
-@-moz-document url-prefix("https://app.dataannotation.tech/") {
+@-moz-document url-prefix("https://app.dataannotation.tech/")
+{
   :root {
-    --datdm-font-custom: /*[[font-custom]]*/;
-    --font-primary: /*[[font-choice]]*/;
+    --datdm-font-custom: /*[[font-custom]]*/ ;
+    --font-primary: /*[[font-choice]]*/ ;
     --bg-primary: #000000;
     --bg-secondary: #333333;
     --bg-ternary: #696969;
@@ -40,7 +41,7 @@
     --text-blue: #0080ff;
     --check-color: #000000;
     --table-padding: 5px;
-    --display-money: /*[[show-money]]*/;
+    --display-money: /*[[show-money]]*/ ;
   }
 
   * {
@@ -229,6 +230,7 @@
   }
 
   .wOhPv *[style*="color: black"],
+  .wOhPv *[style*="color: #000000"],
   .wOhPv *[style*="color: rgb(0, 0, 0)"],
   .wOhPv *[style*="color: rgba(0, 0, 0, 0.85)"],
   .wOhPv *[style*="color: rgb(103, 78, 167)"],
@@ -243,7 +245,8 @@
   }
 
   .wOhPv *[style*="background-color: rgb(206, 231, 247)"],
-  .wOhPv *[style*="background-color: rgb(214, 239, 214)"] {
+  .wOhPv *[style*="background-color: rgb(214, 239, 214)"],
+  .wOhPv *[style*="background-color: #fff"] {
     background-color: var(--bg-secondary) !important;
   }
 
