@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     20240409.1053
+@version     20240409.1118
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -300,7 +300,7 @@
     word-break: break-all;
   }
 
-  .wOhPv ol > li:before {
+  .wOhPv ol > li::before {
     color: var(--text-primary);
   }
 
@@ -441,6 +441,6 @@
   }
 
   .fa {
-    font: normal normal normal 14px/1 FontAwesome !important;
+    font: normal normal normal 14px/1 FontAwesome, sans-serif !important;
   }
 }
