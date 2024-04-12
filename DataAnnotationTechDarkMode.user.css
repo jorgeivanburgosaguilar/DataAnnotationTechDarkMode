@@ -42,6 +42,8 @@
     --check-color: #000000;
     --table-padding: 5px;
     --display-money: /*[[show-money]]*/ ;
+
+    color-scheme: dark !important;
   }
 
   * {
