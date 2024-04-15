@@ -201,6 +201,33 @@
     word-break: break-all;
   }
 
+  .dqlWPE table {
+    width: 100%;
+  }
+
+  /* One column mode for small monitors */
+  @media (max-width: 1400px) {
+    .dqlWPE {
+      word-break: normal;
+    }
+
+    .dqlWPE table {
+      table-layout: fixed;
+    }
+
+    .wOhPv div div.tw-flex {
+      display: block;
+    }
+
+    .wOhPv
+      .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2.tw-pb-24.tw-sticky.tw-top-20.tw-z-50.tw-h-screen.tw-overflow-y-auto {
+      width: 100%;
+      height: auto;
+      position: static;
+      padding-bottom: 0;
+    }
+  }
+
   .wOhPv mark {
     background-color: var(--bg-highlight) !important;
   }
