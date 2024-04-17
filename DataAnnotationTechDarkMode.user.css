@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     20240415.1633
+@version     20240417.1520
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -199,11 +199,11 @@
   .bcLeof {
     border: var(--border-secondary);
     word-break: break-word;
-  }
 
-  .bcLeof table {
-    width: 100%;
-    table-layout: fixed;
+    table {
+      width: 100% !important;
+      table-layout: fixed;
+    }
   }
 
   .wOhPv mark {
