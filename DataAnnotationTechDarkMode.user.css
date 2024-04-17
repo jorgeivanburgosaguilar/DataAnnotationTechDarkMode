@@ -196,11 +196,12 @@
     color: var(--text-primary) !important;
   }
 
-  .dqlWPE {
+  .bcLeof {
     border: var(--border-secondary);
+    word-break: break-word;
   }
 
-  .dqlWPE table {
+  .bcLeof table {
     width: 100%;
     table-layout: fixed;
   }
@@ -362,7 +363,7 @@
 
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    .dqlWPE {
+    .bcLeof {
       word-break: normal;
     }
 
