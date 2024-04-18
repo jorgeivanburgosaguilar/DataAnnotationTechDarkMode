@@ -361,22 +361,27 @@
     border: var(--border-primary);
   }
 
+  .hover\:tw-bg-gray-100:hover {
+    background-color: inherit;
+  }
+
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
     .bcLeof {
       word-break: normal;
     }
 
-    .wOhPv div div.tw-flex {
-      display: block;
-    }
+    .wOhPv {
+      div div.tw-flex {
+        display: block;
+      }
 
-    .wOhPv
       .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2.tw-pb-24.tw-sticky.tw-top-20.tw-z-50.tw-h-screen.tw-overflow-y-auto {
-      width: 100%;
-      height: auto;
-      position: static;
-      padding-bottom: 0;
+        width: 100%;
+        height: auto;
+        position: static;
+        padding-bottom: 0;
+      }
     }
   }
 
