@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     20240418.1603
+@version     20240418.1030
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -48,7 +48,6 @@
 
   * {
     font-family: var(--font-primary) !important;
-    -webkit-font-smoothing: antialiased !important;
   }
 
   body {
@@ -376,6 +375,7 @@
         display: block;
       }
 
+      .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2,
       .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2.tw-pb-24.tw-sticky.tw-top-20.tw-z-50.tw-h-screen.tw-overflow-y-auto {
         width: 100%;
         height: auto;
