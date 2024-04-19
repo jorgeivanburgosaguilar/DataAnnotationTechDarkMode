@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     20240418.2030
+@version     20240419.0905
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -72,12 +72,12 @@
   textarea,
   select,
   optgroup,
-  option,
-  pre {
+  option {
     background-color: var(--bg-secondary);
     color: var(--text-primary);
   }
 
+  pre,
   code {
     background-color: var(--bg-ternary);
     color: var(--text-primary);
@@ -197,7 +197,6 @@
 
   .bcLeof {
     border: var(--border-secondary);
-    word-break: break-word;
 
     table {
       width: 100% !important;
@@ -252,6 +251,18 @@
     color: var(--text-primary) !important;
   }
 
+  .wOhPv *[style*="color: rgb(204, 0, 0)"],
+  .wOhPv *[style*="color: rgb(204, 65, 37)"],
+  .wOhPv *[style*="color: rgb(166, 28, 0)"],
+  .wOhPv *[style*="color: rgb(166, 77, 121)"] {
+    color: var(--text-red) !important;
+  }
+
+  .wOhPv *[style*="color: rgb(60, 120, 216)"],
+  .wOhPv *[style*="color: rgb(118, 165, 175)"] {
+    color: var(--text-blue) !important;
+  }
+
   .wOhPv *[style*="background-color: rgb(206, 231, 247)"],
   .wOhPv *[style*="background-color: rgb(214, 239, 214)"],
   .wOhPv *[style*="background-color: #fff"] {
@@ -282,18 +293,6 @@
     background-color: transparent;
   }
 
-  .wOhPv *[style*="color: rgb(204, 0, 0)"],
-  .wOhPv *[style*="color: rgb(204, 65, 37)"],
-  .wOhPv *[style*="color: rgb(166, 28, 0)"],
-  .wOhPv *[style*="color: rgb(166, 77, 121)"] {
-    color: var(--text-red) !important;
-  }
-
-  .wOhPv *[style*="color: rgb(60, 120, 216)"],
-  .wOhPv *[style*="color: rgb(118, 165, 175)"] {
-    color: var(--text-blue) !important;
-  }
-
   .wOhPv table,
   .wOhPv table td,
   .wOhPv table tr,
@@ -302,10 +301,6 @@
   .wOhPv table tbody,
   .wOhPv table tfoot {
     border: var(--border-primary);
-  }
-
-  .wOhPv table td {
-    word-break: break-all;
   }
 
   .wOhPv ol > li::before {
@@ -366,10 +361,6 @@
 
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    .bcLeof {
-      word-break: normal;
-    }
-
     .wOhPv {
       div div.tw-flex {
         display: block;
@@ -406,6 +397,8 @@
     padding: var(--table-padding);
   }
 
+  .iYKJAF::after,
+  .iYKJAF::before,
   .bvvcVC::after,
   .bvvcVC::before {
     background: none !important;
