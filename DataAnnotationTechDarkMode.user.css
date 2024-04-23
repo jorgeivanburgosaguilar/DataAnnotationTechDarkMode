@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     20240419.0905
+@version     20240422.2246
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -362,16 +362,17 @@
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
     .wOhPv {
-      div div.tw-flex {
-        display: block;
+      div div.tw-flex,
+      div[data-panel-group][data-panel-group-direction="horizontal"][data-panel-group-id=":r0:"] {
+        display: block !important;
       }
 
       .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2,
-      .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2.tw-pb-24.tw-sticky.tw-top-20.tw-z-50.tw-h-screen.tw-overflow-y-auto {
-        width: 100%;
-        height: auto;
-        position: static;
-        padding-bottom: 0;
+      .tw-flex-shrink-0.tw-p-2.tw-pb-24.tw-sticky.tw-top-20.tw-z-50.tw-h-screen.tw-overflow-y-auto {
+        width: 100% !important;
+        height: auto !important;
+        position: static !important;
+        padding-bottom: 0 !important;
       }
     }
   }
