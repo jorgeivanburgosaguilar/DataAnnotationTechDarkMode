@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     202404240.1013
+@version     2024042502226
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -130,13 +130,13 @@
   }
 
   /* Money widget */
-  .enkQEU {
+  .bbanvE {
     display: var(--display-money) !important;
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary) !important;
   }
 
-  .enkQEU a {
+  .bbanvE a {
     text-decoration: none !important;
   }
 
