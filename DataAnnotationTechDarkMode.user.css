@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     2024042502226
+@version     202404270016
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -370,12 +370,25 @@
         display: block !important;
       }
 
+      .tw-flex-grow-0.tw-p-2.tw-overflow-y-auto,
       .tw-flex-grow.tw-flex-shrink-0.tw-w-1\/2.tw-p-2,
+      .tw-flex-shrink-0.tw-p-1.tw-z-50.tw-h-screen.tw-overflow-y-auto,
       .tw-flex-shrink-0.tw-p-2.tw-pb-24.tw-sticky.tw-top-20.tw-z-50.tw-h-screen.tw-overflow-y-auto {
         width: 100% !important;
+        height: 100% !important;
         height: auto !important;
         position: static !important;
         padding-bottom: 0 !important;
+        overflow-y: visible !important;
+      }
+
+      .tw-sticky.tw-top-20.tw-h-screen {
+        height: 100% !important;
+        position: static !important;
+      }
+
+      [role="separator"][data-resize-handle] {
+        display: none !important;
       }
     }
   }
