@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     202404270016
+@version     202404291245
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -176,8 +176,8 @@
   }
 
   /* Work on projects */
-  .hEjYlj::after,
-  .hEjYlj::before {
+  .gUKsPt::after,
+  .gUKsPt::before {
     background: none !important;
   }
 
@@ -187,7 +187,7 @@
   }
 
   /* Tasks */
-  .ileDcs {
+  .eQlCFa {
     * {
       color: var(--text-primary);
     }
@@ -296,17 +296,6 @@
       background-color: transparent;
     }
 
-    .with-tailwind-u4xenr-control,
-    .with-tailwind-18a0yo6-control,
-    .with-tailwind-1nmdiq5-menu {
-      background-color: var(--bg-secondary) !important;
-      border: var(--border-primary);
-    }
-
-    .with-tailwind-1nmdiq5-menu div:hover {
-      color: var(--text-active);
-    }
-
     .container {
       background-color: var(--bg-primary);
     }
@@ -324,13 +313,37 @@
     color: var(--text-primary) !important;
   }
 
-  .kznMmL {
+  .kWCLYG {
     border: var(--border-secondary);
 
     table {
       width: 100% !important;
       table-layout: fixed;
     }
+  }
+
+  .with-tailwind-u4xenr-control,
+  .with-tailwind-18a0yo6-control,
+  .with-tailwind-1nmdiq5-menu {
+    background-color: var(--bg-secondary);
+    border: var(--border-primary);
+  }
+
+  .with-tailwind-1nmdiq5-menu div {
+    color: var(--text-primary);
+  }
+
+  .with-tailwind-1nmdiq5-menu div div:hover {
+    background-color: var(--bg-ternary);
+    text-decoration: underline;
+  }
+
+  .with-tailwind-1dimb5e-singleValue {
+    color: var(--text-primary);
+  }
+
+  .with-tailwind-14byfmz-placeholder {
+    color: var(--text-primary);
   }
 
   .cm-editor {
@@ -364,7 +377,7 @@
 
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    .ileDcs {
+    .eQlCFa {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
         display: block !important;
@@ -414,6 +427,12 @@
     padding: var(--table-padding);
   }
 
+  .bvvcVC::after,
+  .bvvcVC::before,
+  .iYKJAF::after,
+  .iYKJAF::before,
+  .iSulgZ::after,
+  .iSulgZ::before,
   .fWqIcm::after,
   .fWqIcm::before,
   .hDogBV::after,
@@ -421,11 +440,17 @@
     background: none !important;
   }
 
+  .bvvcVC,
+  .iYKJAF,
+  .iSulgZ,
   .fWqIcm,
   .hDogBV {
     border: var(--border-primary);
   }
 
+  .bvvcVC [role="cell"],
+  .iYKJAF [role="cell"],
+  .iSulgZ [role="cell"],
   .fWqIcm [role="cell"],
   .hDogBV [role="cell"] {
     border: var(--border-primary);
