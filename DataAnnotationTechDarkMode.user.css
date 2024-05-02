@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     202404291245
+@version     202405020025
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -222,6 +222,10 @@
       border: var(--border-primary);
     }
 
+    table {
+      background-color: var(--bg-primary);
+    }
+
     table,
     table td,
     table tr,
@@ -244,6 +248,7 @@
     [style*="color: rgb(33, 33, 33)"],
     [style*="color: rgb(32, 33, 36)"],
     [style*="color: rgb(34, 34, 34)"],
+    [style*="color: rgb(37, 36, 40)"],
     [style*="color: rgb(52, 53, 65)"],
     [style*="color: rgb(68, 71, 70)"],
     [style*="color: rgb(103, 78, 167)"],
