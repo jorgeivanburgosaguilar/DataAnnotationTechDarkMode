@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Data Annotation Tech Dark Mode
 @namespace   jorgeivanburgosaguilar
-@version     202405020025
+@version     202405032157
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -130,13 +130,13 @@
   }
 
   /* Money widget */
-  .bbanvE {
+  .hYyeHx {
     display: var(--display-money) !important;
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary) !important;
   }
 
-  .bbanvE a {
+  .hYyeHx a {
     text-decoration: none !important;
   }
 
@@ -176,8 +176,8 @@
   }
 
   /* Work on projects */
-  .gUKsPt::after,
-  .gUKsPt::before {
+  .bJSRmp::after,
+  .bJSRmp::before {
     background: none !important;
   }
 
@@ -187,7 +187,7 @@
   }
 
   /* Tasks */
-  .eQlCFa {
+  .djagpQ {
     * {
       color: var(--text-primary);
     }
@@ -252,6 +252,7 @@
     [style*="color: rgb(52, 53, 65)"],
     [style*="color: rgb(68, 71, 70)"],
     [style*="color: rgb(103, 78, 167)"],
+    [style*="color: rgb(153, 153, 153)"],
     [style*="color: rgba(0, 0, 0, 0.85)"],
     [style*="color: rgba(0, 0, 0, 0.9)"],
     [style*="color: rgba(26, 26, 26, 0.9)"] {
@@ -318,7 +319,7 @@
     color: var(--text-primary) !important;
   }
 
-  .kWCLYG {
+  .fyYqkD {
     border: var(--border-secondary);
 
     table {
@@ -380,9 +381,13 @@
     background-color: inherit;
   }
 
+  .hover\:tw-bg-white:hover {
+    background-color: var(--bg-ternary);
+  }
+
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    .eQlCFa {
+    .djagpQ {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
         display: block !important;
@@ -434,30 +439,26 @@
 
   .bvvcVC::after,
   .bvvcVC::before,
-  .iYKJAF::after,
-  .iYKJAF::before,
-  .iSulgZ::after,
-  .iSulgZ::before,
-  .fWqIcm::after,
-  .fWqIcm::before,
-  .hDogBV::after,
-  .hDogBV::before {
+  .Toxlh::after,
+  .Toxlh::before,
+  .dtBbxd::after,
+  .dtBbxd::before,
+  .cZXfYO::after,
+  .cZXfYO::before {
     background: none !important;
   }
 
   .bvvcVC,
-  .iYKJAF,
-  .iSulgZ,
-  .fWqIcm,
-  .hDogBV {
+  .Toxlh,
+  .dtBbxd,
+  .cZXfYO {
     border: var(--border-primary);
   }
 
   .bvvcVC [role="cell"],
-  .iYKJAF [role="cell"],
-  .iSulgZ [role="cell"],
-  .fWqIcm [role="cell"],
-  .hDogBV [role="cell"] {
+  .Toxlh [role="cell"],
+  .dtBbxd [role="cell"],
+  .cZXfYO [role="cell"] {
     border: var(--border-primary);
   }
 
