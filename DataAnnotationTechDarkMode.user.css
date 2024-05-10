@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202405041818
+@version     202405101527
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -142,12 +142,13 @@
   }
 
   /* Timer widget */
-  .timer {
+  [data-react-class="workers/ExpirationTimer"] div {
     background-color: var(--bg-primary);
     border: var(--border-primary);
     padding: 10px;
     margin-right: 2px;
     z-index: 999 !important;
+    border-top: var(--border-primary) !important;
   }
 
   /* Navbar */
@@ -177,8 +178,8 @@
   }
 
   /* Work on projects */
-  .bJSRmp::after,
-  .bJSRmp::before {
+  .kCfoZC::after,
+  .kCfoZC::before {
     background: none !important;
   }
 
@@ -188,7 +189,7 @@
   }
 
   /* Tasks */
-  .djagpQ {
+  .jngZIT {
     * {
       color: var(--text-primary);
     }
@@ -250,6 +251,7 @@
     [style*="color: rgb(32, 33, 36)"],
     [style*="color: rgb(34, 34, 34)"],
     [style*="color: rgb(37, 36, 40)"],
+    [style*="color: rgb(51, 51, 51)"],
     [style*="color: rgb(52, 53, 65)"],
     [style*="color: rgb(68, 71, 70)"],
     [style*="color: rgb(103, 78, 167)"],
@@ -262,13 +264,17 @@
 
     [style*="color: rgb(204, 0, 0)"],
     [style*="color: rgb(204, 65, 37)"],
+    [style*="color: rgb(133, 32, 12)"],
+    [style*="color: rgb(153, 0, 0)"],
     [style*="color: rgb(166, 28, 0)"],
     [style*="color: rgb(166, 77, 121)"] {
       color: var(--text-red) !important;
     }
 
+    [style*="color: rgb(17, 85, 204)"],
     [style*="color: rgb(60, 120, 216)"],
     [style*="color: rgb(61, 133, 198)"],
+    [style*="color: rgb(103, 78, 167)"],
     [style*="color: rgb(118, 165, 175)"] {
       color: var(--text-blue) !important;
     }
@@ -320,7 +326,11 @@
     color: var(--text-primary) !important;
   }
 
-  .fyYqkD {
+  .surge-wysiwyg ::marker {
+    color: var(--text-primary) !important;
+  }
+
+  .dOlhok {
     border: var(--border-secondary);
 
     table {
@@ -388,7 +398,7 @@
 
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    .djagpQ {
+    .jngZIT {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
         display: block !important;
@@ -492,6 +502,11 @@
 
   .tw-bg-neutral-100 {
     background-color: inherit;
+  }
+
+  /* Referrals */
+  .tw-bg-orange-50 {
+    background-color: var(--bg-secondary) !important;
   }
 
   /* Inbox */
