@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202405101527
+@version     202405101552
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -247,6 +247,7 @@
     [style*="color: rgb(0, 0, 0)"],
     [style*="color: rgb(17, 24, 39)"],
     [style*="color: rgb(29, 28, 29)"],
+    [style*="color: rgb(31, 31, 31)"],
     [style*="color: rgb(33, 33, 33)"],
     [style*="color: rgb(32, 33, 36)"],
     [style*="color: rgb(34, 34, 34)"],
