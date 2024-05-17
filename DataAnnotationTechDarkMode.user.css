@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202405101552
+@version     202405171028
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -131,13 +131,13 @@
   }
 
   /* Money widget */
-  .hYyeHx {
+  .ihJUMm {
     display: var(--display-money) !important;
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary) !important;
   }
 
-  .hYyeHx a {
+  .ihJUMm a {
     text-decoration: none !important;
   }
 
@@ -449,29 +449,21 @@
     padding: var(--table-padding);
   }
 
-  .bvvcVC::after,
-  .bvvcVC::before,
-  .Toxlh::after,
-  .Toxlh::before,
-  .dtBbxd::after,
-  .dtBbxd::before,
-  .cZXfYO::after,
-  .cZXfYO::before {
-    background: none !important;
-  }
+  .jdpSab,
+  .OTGFn {
+    &::before,
+    &::after {
+      background: none !important;
+    }
 
-  .bvvcVC,
-  .Toxlh,
-  .dtBbxd,
-  .cZXfYO {
-    border: var(--border-primary);
-  }
+    .table {
+      color: var(--text-primary);
+    }
 
-  .bvvcVC [role="cell"],
-  .Toxlh [role="cell"],
-  .dtBbxd [role="cell"],
-  .cZXfYO [role="cell"] {
-    border: var(--border-primary);
+    .thead,
+    .tr > div {
+      border: var(--border-primary);
+    }
   }
 
   [role="dialog"] {
