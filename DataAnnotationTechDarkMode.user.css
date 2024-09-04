@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202408140853
+@version     202409041548
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -131,13 +131,13 @@
   }
 
   /* Money widget */
-  .zkDxz {
+  .gMoUrK {
     display: var(--display-money) !important;
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary) !important;
   }
 
-  .zkDxz a {
+  .gMoUrK a {
     text-decoration: none !important;
   }
 
@@ -178,6 +178,8 @@
   }
 
   /* Work on projects */
+  .tVEIx::after,
+  .tVEIx::before,
   .kCfoZC::after,
   .kCfoZC::before {
     background: none !important;
@@ -191,7 +193,8 @@
   /* Tasks */
   .flGUUQ,
   .jngZIT,
-  .ggkPPj {
+  .ggkPPj,
+  .djagpQ {
     * {
       color: var(--text-primary);
     }
@@ -261,6 +264,7 @@
     [style*="color: rgb(37, 36, 40)"],
     [style*="color: rgb(51, 51, 51)"],
     [style*="color: rgb(52, 53, 65)"],
+    [style*="color: rgb(65, 80, 92)"],
     [style*="color: rgb(67, 67, 67)"],
     [style*="color: rgb(68, 71, 70)"],
     [style*="color: rgb(103, 78, 167)"],
@@ -358,6 +362,11 @@
     color: var(--text-primary) !important;
   }
 
+  .tw-bg-black-5.tw-py-2.tw-px-5.tw-rounded-lg.tw-my-5,
+  .tw-bg-white.tw-rounded-md.tw-flex.tw-flex-col {
+    border: var(--border-secondary);
+  }
+
   .hWlozi,
   .dOlhok,
   .fgeTfs {
@@ -438,7 +447,8 @@
   @media (width < 1400px) {
     .flGUUQ,
     .jngZIT,
-    .ggkPPj {
+    .ggkPPj,
+    .djagpQ {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
         display: block !important;
