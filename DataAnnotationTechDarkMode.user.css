@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202409111202
+@version     202409181828
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -131,18 +131,18 @@
   }
 
   /* Money widget */
-  .gMoUrK {
+  .jEAXCg {
     display: var(--display-money) !important;
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary) !important;
   }
 
-  .gMoUrK a {
+  .jEAXCg a {
     text-decoration: none !important;
   }
 
   /* Timer widget */
-  [data-react-class="workers/ExpirationTimer"] div {
+  #workers\/ExpirationTimer-hybrid-root div {
     background-color: var(--bg-primary);
     border: var(--border-primary);
     padding: 10px;
@@ -185,8 +185,7 @@
     background: none !important;
   }
 
-  .tVEIx .tw-p-4,
-  .kCfoZC .tw-p-4 {
+  #workers\/WorkerProjectsTable-hybrid-root td .tw-p-4 {
     padding: 0.9rem;
   }
 
@@ -199,7 +198,8 @@
   .flGUUQ,
   .jngZIT,
   .ggkPPj,
-  .djagpQ {
+  .djagpQ,
+  .bGSzsD {
     * {
       color: var(--text-primary);
     }
@@ -453,7 +453,8 @@
     .flGUUQ,
     .jngZIT,
     .ggkPPj,
-    .djagpQ {
+    .djagpQ,
+    .bGSzsD {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
         display: block !important;
