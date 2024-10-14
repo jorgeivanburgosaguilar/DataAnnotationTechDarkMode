@@ -131,13 +131,13 @@
   }
 
   /* Money widget */
-  .jEAXCg {
+  .ipmfxv {
     display: var(--display-money) !important;
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary) !important;
   }
 
-  .jEAXCg a {
+  .ipmfxv a {
     text-decoration: none !important;
   }
 
@@ -195,11 +195,8 @@
   }
 
   /* Tasks */
-  .flGUUQ,
-  .jngZIT,
-  .ggkPPj,
-  .djagpQ,
-  .bGSzsD {
+  #main,
+  .kyZNuN {
     * {
       color: var(--text-primary);
     }
@@ -451,11 +448,8 @@
 
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    .flGUUQ,
-    .jngZIT,
-    .ggkPPj,
-    .djagpQ,
-    .bGSzsD {
+    #main,
+    .kyZNuN {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
         display: block !important;
