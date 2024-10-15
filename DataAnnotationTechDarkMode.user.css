@@ -195,7 +195,6 @@
   }
 
   /* Tasks */
-  #main,
   .kyZNuN {
     * {
       color: var(--text-primary);
@@ -448,7 +447,6 @@
 
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
-    #main,
     .kyZNuN {
       div div.tw-flex,
       div[data-panel-group][data-panel-group-direction="horizontal"] {
