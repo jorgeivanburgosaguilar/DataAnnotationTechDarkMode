@@ -4,6 +4,7 @@
     "selector-id-pattern": null,
     "selector-class-pattern": null,
     "color-hex-length": "long",
-    "no-descending-specificity": null
+    "no-descending-specificity": null,
+    "at-rule-no-vendor-prefix": null
   }
 }
