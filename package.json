@@ -6,7 +6,7 @@
   "author": "Jorge Ivan Burgos Aguilar",
   "license": "Unlicense",
   "devDependencies": {
-    "stylelint": "^16.10.0",
+    "stylelint": "^16.14.1",
     "stylelint-config-standard": "^36.0.1"
   }
 }
