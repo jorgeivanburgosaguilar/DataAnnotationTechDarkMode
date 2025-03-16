@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202503132037
+@version     202503160200
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -76,6 +76,17 @@
   option {
     background-color: var(--bg-secondary);
     color: var(--text-primary);
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    color: var(--check-color);
+    border: var(--border-primary);
+  }
+
+  input[type="text"] {
+    background-color: var(--bg-secondary);
+    border: var(--border-primary);
   }
 
   pre,
@@ -225,12 +236,6 @@
       color: var(--text-primary);
     }
 
-    input[type="radio"],
-    input[type="checkbox"] {
-      color: var(--check-color);
-      border: var(--border-primary);
-    }
-
     table {
       background-color: var(--bg-primary);
     }
@@ -252,6 +257,7 @@
     [style*="color: black"],
     [style*="color: #000000"],
     [style*="color: rgb(0, 0, 0)"],
+    [style*="color: rgb(0, 29, 53)"],
     [style*="color: rgb(5, 5, 5)"],
     [style*="color: rgb(10, 10, 10)"],
     [style*="color: rgb(17, 24, 39)"],
@@ -347,6 +353,10 @@
       background-color: sienna !important;
     }
 
+    [style*="background-color:paleturquoise"] {
+      background-color: var(--bg-green) !important;
+    }
+
     .chat-history code {
       background-color: transparent;
     }
@@ -411,6 +421,8 @@
     }
   }
 
+  .with-tailwind-8r0k6o-control,
+  .with-tailwind-5ewsi1-control,
   .with-tailwind-u4xenr-control,
   .with-tailwind-18a0yo6-control,
   .with-tailwind-1nmdiq5-menu {
@@ -487,10 +499,6 @@
 
   .list-group-item.disabled {
     background-color: unset;
-  }
-
-  .with-tailwind-5ewsi1-control {
-    background-color: var(--bg-secondary);
   }
 
   .tw-bg-\[\#F4F4F4\] {
