@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202503300025
+@version     202503301145
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -311,6 +311,8 @@
       background-color: var(--bg-primary) !important;
     }
 
+    [style*="background-color: lightgray"],
+    [style*="background-color: lemonchiffon"],
     [style*="background-color: #f2f2f2"],
     [style*="background-color: rgb(206, 231, 247)"],
     [style*="background-color: rgb(214, 239, 214)"],
@@ -321,42 +323,21 @@
     }
 
     [style*="background-color: lightblue"],
-    [style*="background-color: lightskyblue"] {
-      background-color: var(--bg-blue) !important;
-      opacity: 1 !important;
-    }
-
+    [style*="background-color: lightskyblue"],
     [style*="background-color: rgb(219, 234, 254)"] {
       background-color: var(--bg-blue) !important;
     }
 
     [style*="background-color: palegreen"],
-    [style*="background-color: rgb(249, 250, 251)"] {
-      background-color: var(--bg-green) !important;
-      opacity: 1 !important;
-    }
-
+    [style*="background-color: paleturquoise"],
+    [style*="background-color: rgb(249, 250, 251)"],
     [style*="background-color: rgb(220, 252, 231)"] {
       background-color: var(--bg-green) !important;
-    }
-
-    [style*="background-color: lightgray"] {
-      background-color: var(--bg-secondary) !important;
-      opacity: 1 !important;
-    }
-
-    [style*="background-color: lemonchiffon"] {
-      background-color: var(--bg-secondary) !important;
-      opacity: 0.4 !important;
     }
 
     [style*="background-color: lightpink"],
     [style*="background-color: rgb(255, 228, 230)"] {
       background-color: sienna !important;
-    }
-
-    [style*="background-color:paleturquoise"] {
-      background-color: var(--bg-green) !important;
     }
 
     .chat-history code {
@@ -382,26 +363,6 @@
     .opa-preview,
     .opa-preview-pixel-fullscreen {
       background-color: var(--bg-primary) !important;
-    }
-  }
-
-  .surge-wysiwyg {
-    --tw-prose-headings: var(--text-primary) !important;
-
-    color: var(--text-primary) !important;
-
-    & ::marker {
-      color: var(--text-primary) !important;
-    }
-
-    & table {
-      table-layout: fixed;
-    }
-
-    & table[style*="minWidth: 1094px"],
-    & table[style*="minWidth: 1621px"],
-    & table[style*="minWidth: 1696px"] {
-      table-layout: auto;
     }
   }
 
@@ -443,10 +404,7 @@
     text-decoration: underline;
   }
 
-  .with-tailwind-1dimb5e-singleValue {
-    color: var(--text-primary);
-  }
-
+  .with-tailwind-1dimb5e-singleValue,
   .with-tailwind-14byfmz-placeholder {
     color: var(--text-primary);
   }
@@ -515,6 +473,26 @@
 
   .tw-bg-green-50 {
     background-color: var(--bg-green);
+  }
+
+  .surge-wysiwyg {
+    --tw-prose-headings: var(--text-primary) !important;
+
+    color: var(--text-primary) !important;
+
+    & ::marker {
+      color: var(--text-primary) !important;
+    }
+
+    & table {
+      table-layout: fixed;
+    }
+
+    & table[style*="minWidth: 1094px"],
+    & table[style*="minWidth: 1621px"],
+    & table[style*="minWidth: 1696px"] {
+      table-layout: auto;
+    }
   }
 
   /* Tasks 1-column mode for small screens */
