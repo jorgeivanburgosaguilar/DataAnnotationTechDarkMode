@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "stylelint.vscode-stylelint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "vitest.explorer"
     ]
 }
