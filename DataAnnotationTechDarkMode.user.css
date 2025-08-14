@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202507110052
+@version     202508132105
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -40,6 +40,7 @@
     --text-active: #3366cc;
     --text-red: #ff0000;
     --text-blue: #0080ff;
+    --text-green: #32cd32;
     --check-color: #000000;
     --table-padding: 5px;
     --display-money: /*[[show-money]]*/ ;
@@ -145,6 +146,8 @@
   [style*="color:#999"],
   [style*="color: black"],
   [style*="color: #000000"],
+  [style*="color:#000000"],
+  [style*="color:#434343"],
   [style*="color: rgb(0, 0, 0)"],
   [style*="color: rgb(0, 29, 53)"],
   [style*="color: rgb(5, 5, 5)"],
@@ -174,7 +177,8 @@
   [style*="color: rgba(0, 0, 0, 0.87)"],
   [style*="color: rgba(0, 0, 0, 0.9)"],
   [style*="color: rgba(26, 26, 26, 0.9)"],
-  [style*="color: rgba(26, 26, 26, 0.8)"] {
+  [style*="color: rgba(26, 26, 26, 0.8)"],
+  [style*="color: rgba(107, 114, 128, 0.4)"] {
     color: var(--text-primary) !important;
   }
 
@@ -195,6 +199,10 @@
   [style*="color: rgb(103, 78, 167)"],
   [style*="color: rgb(118, 165, 175)"] {
     color: var(--text-blue) !important;
+  }
+
+  [style*="color:#188038"] {
+    color: var(--text-green) !important;
   }
 
   /* Money widget */
@@ -477,8 +485,13 @@
     background-color: var(--bg-blue);
   }
 
-  .tw-bg-green-50 {
+  .tw-bg-green-50,
+  .tw-bg-green-100 {
     background-color: var(--bg-green);
+  }
+
+  .tw-text-green-700 {
+    color: var(--text-green) !important;
   }
 
   .surge-wysiwyg {
@@ -510,6 +523,11 @@
         display: block !important;
         overflow-y: visible !important;
         max-height: none !important;
+      }
+
+      div div.tw-flex.tw-justify-end.tw-gap-2,
+      div div.tw-mb-5.tw-flex.tw-items-start.tw-justify-between.tw-gap-4 {
+        display: flex !important;
       }
 
       .tw-flex-grow-0.tw-p-2.tw-overflow-y-auto,
@@ -659,37 +677,70 @@
   .fa {
     font: normal normal normal 14px/1 FontAwesome, sans-serif !important;
   }
-}
 
-/* Alerts */
-.alert-primary {
-  color: #00306a !important;
-}
+  /* Alerts */
+  .alert-primary,
+  .alert-primary span {
+    color: #00306a !important;
+  }
 
-.alert-secondary {
-  color: #383d41 !important;
-}
+  .alert-secondary,
+  .alert-secondary span {
+    color: #383d41 !important;
+  }
 
-.alert-success {
-  color: #155724 !important;
-}
+  .alert-success,
+  .alert-success span {
+    color: #155724 !important;
+  }
 
-.alert-info {
-  color: #0c5460 !important;
-}
+  .alert-info,
+  .alert-info span {
+    color: #0c5460 !important;
+  }
 
-.alert-warning {
-  color: #856404 !important;
-}
+  .alert-warning,
+  .alert-warning span {
+    color: #856404 !important;
+  }
 
-.alert-danger {
-  color: #721c24 !important;
-}
+  .alert-danger,
+  .alert-danger span {
+    color: #721c24 !important;
+  }
 
-.alert-light {
-  color: #818182 !important;
-}
+  .alert-light,
+  .alert-light span {
+    color: #818182 !important;
+  }
 
-.alert-dark {
-  color: #1b1e21 !important;
+  .alert-dark,
+  .alert-dark span {
+    color: #1b1e21 !important;
+  }
+
+  /* Documents (/publish) */
+  .doc-content {
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+
+    & table {
+      & td,
+      & tr,
+      & th,
+      & thead,
+      & tbody,
+      & tfoot {
+        background-color: var(--bg-primary) !important;
+        color: var(--text-primary);
+        border: var(--border-primary) !important;
+      }
+
+      & th,
+      & thead,
+      & tfoot {
+        padding: var(--table-padding) !important;
+      }
+    }
+  }
 }
