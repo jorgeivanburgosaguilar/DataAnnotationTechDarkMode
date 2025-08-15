@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202508140036
+@version     202508142240
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -154,6 +154,7 @@
   [style*="color: rgb(10, 10, 10)"],
   [style*="color: rgb(16, 20, 24)"],
   [style*="color: rgb(17, 24, 39)"],
+  [style*="color: rgb(25, 118, 210)"],
   [style*="color: rgb(26, 26, 26)"],
   [style*="color: rgb(27, 28, 29)"],
   [style*="color: rgb(29, 28, 29)"],
@@ -165,6 +166,8 @@
   [style*="color: rgb(33, 37, 41)"],
   [style*="color: rgb(34, 34, 34)"],
   [style*="color: rgb(37, 36, 40)"],
+  [style*="color: rgb(44, 62, 80)"],
+  [style*="color: rgb(52, 73, 94)"],
   [style*="color: rgb(51, 51, 51)"],
   [style*="color: rgb(52, 53, 65)"],
   [style*="color: rgb(65, 80, 92)"],
@@ -172,6 +175,7 @@
   [style*="color: rgb(67, 67, 67)"],
   [style*="color: rgb(68, 71, 70)"],
   [style*="color: rgb(103, 78, 167)"],
+  [style*="color: rgb(127, 140, 141)"],
   [style*="color: rgb(153, 153, 153)"],
   [style*="color: rgba(0, 0, 0, 0.85)"],
   [style*="color: rgba(0, 0, 0, 0.87)"],
@@ -318,9 +322,15 @@
       color: var(--text-primary);
     }
 
+    [style*="background: white"],
+    [style*="background: rgb(232, 244, 253)"],
     [style*="background-color: #FFFFFF"],
     [style*="background-color: rgb(238, 251, 255)"] {
       background-color: var(--bg-primary) !important;
+    }
+
+    [style*="background: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%)"] {
+      background: var(--bg-primary) !important;
     }
 
     [style*="background-color: lightgray"],
@@ -345,12 +355,18 @@
     [style*="background-color: palegreen"],
     [style*="background-color: paleturquoise"],
     [style*="background-color: rgb(249, 250, 251)"],
+    [style*="background: rgb(248, 249, 250)"],
     [style*="background-color: rgb(220, 252, 231)"] {
       background-color: var(--bg-green) !important;
     }
 
+    [style*="background: linear-gradient(120deg, rgb(168, 237, 234) 0%, rgb(254, 214, 227) 100%)"] {
+      background: var(--bg-green) !important;
+    }
+
     [style*="background-color: lightpink"],
-    [style*="background-color: rgb(255, 228, 230)"] {
+    [style*="background-color: rgb(255, 228, 230)"],
+    [style*="background: rgb(255, 243, 205)"] {
       background-color: sienna !important;
     }
 
