@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202508150019
+@version     202508161351
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -167,9 +167,10 @@
   [style*="color: rgb(34, 34, 34)"],
   [style*="color: rgb(37, 36, 40)"],
   [style*="color: rgb(44, 62, 80)"],
-  [style*="color: rgb(52, 73, 94)"],
   [style*="color: rgb(51, 51, 51)"],
   [style*="color: rgb(52, 53, 65)"],
+  [style*="color: rgb(52, 73, 94)"],
+  [style*="color: rgb(55, 65, 81)"],
   [style*="color: rgb(65, 80, 92)"],
   [style*="color: rgb(66, 66, 66)"],
   [style*="color: rgb(67, 67, 67)"],
@@ -209,9 +210,100 @@
     color: var(--text-green) !important;
   }
 
+  /* Background colors */
+  [style*="background: white"],
+  [style*="background: rgb(232, 244, 253)"],
+  [style*="background-color:#ffffff"],
+  [style*="background-color: #FFFFFF"],
+  [style*="background-color: rgb(238, 251, 255)"] {
+    background-color: var(--bg-primary) !important;
+  }
+
+  [style*="background: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%)"] {
+    background: var(--bg-primary) !important;
+  }
+
+  [style*="background-color: lightgray"],
+  [style*="background-color: lemonchiffon"],
+  [style*="background-color: #f2f2f2"],
+  [style*="background-color: rgb(206, 231, 247)"],
+  [style*="background-color: rgb(214, 239, 214)"],
+  [style*="background-color: #fff"],
+  [style*="background-color: white"],
+  [style*="background: #cbe6b3"] {
+    background-color: var(--bg-secondary) !important;
+  }
+
+  [style*="background-color:#dbeafe"],
+  [style*="background-color: lightblue"],
+  [style*="background-color: lightskyblue"],
+  [style*="background-color: rgb(219, 234, 254)"] {
+    background-color: var(--bg-blue) !important;
+  }
+
+  [style*="background-color:#f9fafb"],
+  [style*="background-color: palegreen"],
+  [style*="background-color: paleturquoise"],
+  [style*="background-color: rgb(249, 250, 251)"],
+  [style*="background: rgb(248, 249, 250)"],
+  [style*="background-color: rgb(220, 252, 231)"] {
+    background-color: var(--bg-green) !important;
+  }
+
+  [style*="background: linear-gradient(120deg, rgb(168, 237, 234) 0%, rgb(254, 214, 227) 100%)"] {
+    background: var(--bg-green) !important;
+  }
+
+  [style*="background-color: lightpink"],
+  [style*="background-color: rgb(255, 228, 230)"],
+  [style*="background: rgb(255, 243, 205)"] {
+    background-color: sienna !important;
+  }
+
   /* Modal */
   .tw-z-modal {
     z-index: 40 !important;
+  }
+
+  /* Alerts */
+  .alert-primary,
+  .alert-primary span {
+    color: #00306a !important;
+  }
+
+  .alert-secondary,
+  .alert-secondary span {
+    color: #383d41 !important;
+  }
+
+  .alert-success,
+  .alert-success span {
+    color: #155724 !important;
+  }
+
+  .alert-info,
+  .alert-info span {
+    color: #0c5460 !important;
+  }
+
+  .alert-warning,
+  .alert-warning span {
+    color: #856404 !important;
+  }
+
+  .alert-danger,
+  .alert-danger span {
+    color: #721c24 !important;
+  }
+
+  .alert-light,
+  .alert-light span {
+    color: #818182 !important;
+  }
+
+  .alert-dark,
+  .alert-dark span {
+    color: #1b1e21 !important;
   }
 
   /* Money widget */
@@ -261,7 +353,7 @@
     color: var(--text-primary) !important;
   }
 
-  /* Work on projects */
+  /* Work on projects (/workers/projects) */
   .tVEIx::after,
   .tVEIx::before,
   .kCfoZC::after,
@@ -278,7 +370,7 @@
     background-color: var(--bg-primary);
   }
 
-  /* Tasks */
+  /* Qualifications/Projects (/workers/tasks)  */
   #main,
   .worker-task {
     * {
@@ -325,54 +417,6 @@
 
     ol > li::before {
       color: var(--text-primary);
-    }
-
-    [style*="background: white"],
-    [style*="background: rgb(232, 244, 253)"],
-    [style*="background-color: #FFFFFF"],
-    [style*="background-color: rgb(238, 251, 255)"] {
-      background-color: var(--bg-primary) !important;
-    }
-
-    [style*="background: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%)"] {
-      background: var(--bg-primary) !important;
-    }
-
-    [style*="background-color: lightgray"],
-    [style*="background-color: lemonchiffon"],
-    [style*="background-color: #f2f2f2"],
-    [style*="background-color: rgb(206, 231, 247)"],
-    [style*="background-color: rgb(214, 239, 214)"],
-    [style*="background-color: #fff"],
-    [style*="background-color: white"],
-    [style*="background: #cbe6b3"] {
-      background-color: var(--bg-secondary) !important;
-    }
-
-    [style*="background-color:#dbeafe"],
-    [style*="background-color: lightblue"],
-    [style*="background-color: lightskyblue"],
-    [style*="background-color: rgb(219, 234, 254)"] {
-      background-color: var(--bg-blue) !important;
-    }
-
-    [style*="background-color:#f9fafb"],
-    [style*="background-color: palegreen"],
-    [style*="background-color: paleturquoise"],
-    [style*="background-color: rgb(249, 250, 251)"],
-    [style*="background: rgb(248, 249, 250)"],
-    [style*="background-color: rgb(220, 252, 231)"] {
-      background-color: var(--bg-green) !important;
-    }
-
-    [style*="background: linear-gradient(120deg, rgb(168, 237, 234) 0%, rgb(254, 214, 227) 100%)"] {
-      background: var(--bg-green) !important;
-    }
-
-    [style*="background-color: lightpink"],
-    [style*="background-color: rgb(255, 228, 230)"],
-    [style*="background: rgb(255, 243, 205)"] {
-      background-color: sienna !important;
     }
 
     .chat-history code {
@@ -589,7 +633,7 @@
     }
   }
 
-  /* Report time */
+  /* Report time (/workers/projects/TASKID/report_time)  */
   .tw-text-black,
   .tw-text-black:hover,
   .tw-text-black-10,
@@ -653,7 +697,7 @@
     border: var(--border-secondary);
   }
 
-  /* Transfer funds */
+  /* Transfer funds (/workers/payments)  */
   .card {
     background-color: var(--bg-secondary);
   }
@@ -685,7 +729,7 @@
     background-color: var(--bg-primary) !important;
   }
 
-  /* Profile */
+  /* Profile (/me) */
   .btn-default {
     background-color: var(--bg-secondary);
     color: inherit;
@@ -698,47 +742,6 @@
 
   .fa {
     font: normal normal normal 14px/1 FontAwesome, sans-serif !important;
-  }
-
-  /* Alerts */
-  .alert-primary,
-  .alert-primary span {
-    color: #00306a !important;
-  }
-
-  .alert-secondary,
-  .alert-secondary span {
-    color: #383d41 !important;
-  }
-
-  .alert-success,
-  .alert-success span {
-    color: #155724 !important;
-  }
-
-  .alert-info,
-  .alert-info span {
-    color: #0c5460 !important;
-  }
-
-  .alert-warning,
-  .alert-warning span {
-    color: #856404 !important;
-  }
-
-  .alert-danger,
-  .alert-danger span {
-    color: #721c24 !important;
-  }
-
-  .alert-light,
-  .alert-light span {
-    color: #818182 !important;
-  }
-
-  .alert-dark,
-  .alert-dark span {
-    color: #1b1e21 !important;
   }
 
   /* Documents (/publish) */
