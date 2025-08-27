@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202508171608
+@version     202508270017
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -148,6 +148,10 @@
   [style*="color: #000000"],
   [style*="color:#000000"],
   [style*="color:#434343"],
+  [style*="color:#37474f"],
+  [style*="color:#666666"],
+  [style*="color:#1d1c1d"],
+  [style*="color:#111827"],
   [style*="color: rgb(0, 0, 0)"],
   [style*="color: rgb(0, 29, 53)"],
   [style*="color: rgb(5, 5, 5)"],
@@ -257,15 +261,32 @@
   [style*="background-color:#ffff00"],
   [style*="background-color:#dcfce7"],
   [style*="background-color:#ffe4e6"],
+  [style*="background-color:#d9ead3"],
+  [style*="background-color:#c9daf8"],
+  [style*="background-color:#f4cccc"],
   [style*="background-color: lightpink"],
   [style*="background-color: rgb(255, 228, 230)"],
   [style*="background: rgb(255, 243, 205)"] {
     background-color: sienna !important;
   }
 
+  /* Other styles */
+  [style*="line-height:1.0"] {
+    line-height: inherit !important;
+  }
+
+  .tw-bg-yellow-50,
+  .tw-bg-yellow-200 {
+    background-color: sienna !important;
+  }
+
+  .hover\:tw-bg-blue-100:hover {
+    background-color: var(--bg-blue) !important;
+  }
+
   /* Modal */
   .tw-z-modal {
-    z-index: 40 !important;
+    z-index: 50 !important;
   }
 
   /* Alerts */
