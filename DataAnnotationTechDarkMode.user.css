@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202510062302
+@version     202510111128
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -143,16 +143,19 @@
   }
 
   /* Text colors */
-  [style*="color:#999"],
   [style*="color: black"],
   [style*="color: #000000"],
   [style*="color: #202020"],
+  [style*="color:#999"],
   [style*="color:#000000"],
+  [style*="color:#202020"],
   [style*="color:#434343"],
   [style*="color:#37474f"],
   [style*="color:#666666"],
   [style*="color:#1d1c1d"],
   [style*="color:#111827"],
+  [style*="color:#1f1f1f"],
+  [style*="color:#1a1a1a"],
   [style*="color: rgb(0, 0, 0)"],
   [style*="color: rgb(0, 29, 53)"],
   [style*="color: rgb(5, 5, 5)"],
@@ -194,6 +197,7 @@
 
   [style*="color:red"],
   [style*="color:red"] b,
+  [style*="color:#9900ff"],
   [style*="color: rgb(204, 0, 0)"],
   [style*="color: rgb(204, 65, 37)"],
   [style*="color: rgb(133, 32, 12)"],
@@ -203,6 +207,8 @@
     color: var(--text-red) !important;
   }
 
+  [style*="color:#e5e7eb"],
+  [style*="color:#0000ff"],
   [style*="color: rgb(17, 85, 204)"],
   [style*="color: rgb(60, 120, 216)"],
   [style*="color: rgb(61, 133, 198)"],
@@ -220,7 +226,8 @@
   [style*="background: rgb(232, 244, 253)"],
   [style*="background-color:#ffffff"],
   [style*="background-color: #FFFFFF"],
-  [style*="background-color: rgb(238, 251, 255)"] {
+  [style*="background-color: rgb(238, 251, 255)"],
+  [style*="background-color:#fafafa"] {
     background-color: var(--bg-primary) !important;
   }
 
@@ -265,6 +272,9 @@
   [style*="background-color:#d9ead3"],
   [style*="background-color:#c9daf8"],
   [style*="background-color:#f4cccc"],
+  [style*="background-color:#fff2cc"],
+  [style*="background-color:#bfdeb1"],
+  [style*="background-color:#f6b26b"],
   [style*="background-color: lightpink"],
   [style*="background-color: rgb(255, 228, 230)"],
   [style*="background: rgb(255, 243, 205)"] {
