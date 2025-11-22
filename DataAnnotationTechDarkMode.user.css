@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202511182352
+@version     202511221245
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -295,8 +295,13 @@
     background-color: sienna !important;
   }
 
+  .tw-bg-blue-100 {
+    background-color: var(--bg-blue);
+  }
+
+  .hover\:tw-bg-primary-light-20:hover,
   .hover\:tw-bg-blue-100:hover {
-    background-color: var(--bg-blue) !important;
+    background-color: var(--bg-green) !important;
   }
 
   /* Modal */
@@ -415,9 +420,14 @@
     background-color: var(--bg-primary);
   }
 
+  .hover\:tw-bg-\[#F2E9F5\]:hover,
   .tw-bg-\[\#E5D3EB\],
   .hover\:tw-bg-\[\#F2E9F5\]:hover {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-secondary) !important;
+  }
+
+  .data-\[state\=open\]\:\!tw-bg-blue-50[data-state="open"] {
+    background-color: rgba(var(--bg-primary) / 80%) !important;
   }
 
   .tw-fill-zinc-300 {
@@ -636,6 +646,13 @@
     & table[style*="min-width: 1696px"] {
       table-layout: auto;
     }
+  }
+
+  .monaco-editor,
+  .monaco-editor-background,
+  .monaco-editor .margin,
+  .sticky-widget {
+    background-color: var(--bg-primary) !important;
   }
 
   /* Tasks 1-column mode for small screens */
