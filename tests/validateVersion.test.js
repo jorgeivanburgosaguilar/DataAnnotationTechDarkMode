@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import fs from "fs";
 import path from "path";
 
-const USERCSS_FILEPATH = path.resolve("./DataAnnotationTechDarkMode.user.css");
+const USERCSS_FILEPATH = path.resolve("./src/DataAnnotationTechDarkMode.user.css");
 
 /**
  * Parses userCSS version and extracts date components
