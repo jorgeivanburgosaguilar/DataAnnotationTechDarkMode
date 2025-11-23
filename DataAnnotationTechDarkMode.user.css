@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202511221245
+@version     202511231336
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -177,6 +177,7 @@
   [style*="color: rgb(33, 37, 41)"],
   [style*="color: rgb(34, 34, 34)"],
   [style*="color: rgb(37, 36, 40)"],
+  [style*="color: rgb(38, 139, 210)"],
   [style*="color: rgb(44, 62, 80)"],
   [style*="color: rgb(51, 51, 51)"],
   [style*="color: rgb(52, 53, 65)"],
@@ -188,6 +189,7 @@
   [style*="color: rgb(68, 71, 70)"],
   [style*="color: rgb(89, 89, 89)"],
   [style*="color: rgb(103, 78, 167)"],
+  [style*="color: rgb(133, 153, 0)"],
   [style*="color: rgb(127, 140, 141)"],
   [style*="color: rgb(153, 153, 153)"],
   [style*="color: rgba(0, 0, 0, 0.85)"],
@@ -655,6 +657,10 @@
     background-color: var(--bg-primary) !important;
   }
 
+  .object-key > span {
+    color: var(--text-green) !important;
+  }
+
   /* Tasks 1-column mode for small screens */
   @media (width < 1400px) {
     .kyZNuN,
@@ -827,6 +833,7 @@
     & p,
     & span {
       color: var(--text-primary) !important;
+      background-color: inherit;
     }
 
     & table {
