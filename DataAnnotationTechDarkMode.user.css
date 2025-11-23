@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202511231336
+@version     202511231411
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -655,6 +655,11 @@
   .monaco-editor .margin,
   .sticky-widget {
     background-color: var(--bg-primary) !important;
+  }
+
+  .tw-bg-gray-100\/30,
+  .tw-bg-green-50\/50 {
+    background-color: var(--bg-secondary) !important;
   }
 
   .object-key > span {
