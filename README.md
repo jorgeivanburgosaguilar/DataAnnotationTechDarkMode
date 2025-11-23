@@ -11,9 +11,7 @@
 
 ## FAQ
 
-1. Do you accept pull requests?
-   - Yes
-2. Why do you have Intel One Mono as an font option?
-   - It is my personal preference as it enhances focus and improves readability. If you find it difficult to focus or read, [this font](https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html) might be beneficial. It was designed by Intel to optimize legibility.
-3. Is this better than dark reader add-on?
+1. Why do you have [Intel One Mono]((https://www.intel.com/content/www/us/en/company-overview/one-monospace-font.html)) as an font option?
+   - It enhances focus and improves readability for developers and is my default font.
+2. Is this better than the dark reader add-on?
    - No, this is just a personal alternative, developed and maintained by me to improve my work UI.
