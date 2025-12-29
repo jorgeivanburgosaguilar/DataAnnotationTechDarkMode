@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202512260037
+@version     202512290159
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -19,6 +19,12 @@
   money-yes "Yes" <<<EOT
   flex EOT;
   money-no "No" <<<EOT
+  none EOT;
+}
+@advanced dropdown show-help-button "Show Help Button Widget" {
+  help-button-yes "Yes" <<<EOT
+  block EOT;
+  help-button-no "No" <<<EOT
   none EOT;
 }
 ==/UserStyle== */
@@ -44,6 +50,7 @@
     --check-color: #000000;
     --table-padding: 5px;
     --display-money: /*[[show-money]]*/ ;
+    --display-help-button: /*[[show-help-button]]*/ ;
 
     color-scheme: dark !important;
   }
@@ -362,6 +369,11 @@
     & a {
       text-decoration: none !important;
     }
+  }
+
+  /* Help button widget */
+  #floating-worker-help-button-root {
+    display: var(--display-help-button) !important;
   }
 
   /* Timer widget */
