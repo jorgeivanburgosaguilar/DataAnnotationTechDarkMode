@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202601081820
+@version     202602040028
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -31,8 +31,8 @@
 @-moz-document url-prefix("https://app.dataannotation.tech/")
 {
   :root {
-    --datdm-font-custom: /*[[font-custom]]*/ ;
-    --font-primary: /*[[font-choice]]*/ ;
+    --datdm-font-custom: /*[[font-custom]]*/;
+    --font-primary: /*[[font-choice]]*/;
     --bg-primary: #000000;
     --bg-secondary: #333333;
     --bg-ternary: #696969;
@@ -49,8 +49,8 @@
     --text-green: #0fff50;
     --check-color: #000000;
     --table-padding: 5px;
-    --display-money: /*[[show-money]]*/ ;
-    --display-help-button: /*[[show-help-button]]*/ ;
+    --display-money: /*[[show-money]]*/;
+    --display-help-button: /*[[show-help-button]]*/;
 
     color-scheme: dark !important;
   }
@@ -264,16 +264,18 @@
   [style*="background-color:#dbeafe"],
   [style*="background-color: lightblue"],
   [style*="background-color: lightskyblue"],
+  [style*="background-color: rgb(173, 216, 230)"],
   [style*="background-color: rgb(219, 234, 254)"] {
     background-color: var(--bg-blue) !important;
   }
 
+  [style*="background: rgb(248, 249, 250)"],
   [style*="background-color:#f9fafb"],
   [style*="background-color: palegreen"],
   [style*="background-color: paleturquoise"],
-  [style*="background-color: rgb(249, 250, 251)"],
-  [style*="background: rgb(248, 249, 250)"],
-  [style*="background-color: rgb(220, 252, 231)"] {
+  [style*="background-color: rgb(144, 238, 144)"],
+  [style*="background-color: rgb(220, 252, 231)"],
+  [style*="background-color: rgb(249, 250, 251)"] {
     background-color: var(--bg-green) !important;
   }
 
@@ -841,7 +843,9 @@
   }
 
   .fa {
-    font: normal normal normal 14px/1 FontAwesome, sans-serif !important;
+    font:
+      normal normal normal 14px/1 FontAwesome,
+      sans-serif !important;
   }
 
   /* Documents (/publish) */
