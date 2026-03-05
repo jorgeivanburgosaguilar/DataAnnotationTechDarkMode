@@ -448,7 +448,7 @@
   }
 
   .data-\[state\=open\]\:\!tw-bg-blue-50[data-state="open"] {
-    background-color: rgba(var(--bg-primary) / 80%) !important;
+    background-color: rgb(var(--bg-primary) / 80%) !important;
   }
 
   .tw-fill-zinc-300 {
@@ -550,7 +550,8 @@
     }
 
     table td {
-      word-break: break-word;
+      word-break: normal;
+      overflow-wrap: break-word;
     }
   }
 
