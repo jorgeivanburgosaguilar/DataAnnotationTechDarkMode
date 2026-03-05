@@ -6,9 +6,9 @@
   "author": "Jorge Ivan Burgos Aguilar",
   "license": "Unlicense",
   "devDependencies": {
-    "stylelint": "^16.26.1",
-    "stylelint-config-standard": "^36.0.1",
-    "vitest": "^3.2.4"
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard": "^40.0.0",
+    "vitest": "^4.0.18"
   },
   "scripts": {
     "test": "vitest run"
