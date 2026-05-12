@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202605062349
+@version     202605120022
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -203,6 +203,7 @@
   [style*="color: rgb(133, 153, 0)"],
   [style*="color: rgb(127, 140, 141)"],
   [style*="color: rgb(153, 153, 153)"],
+  [style*="color: rgb(107, 114, 128)"],
   [style*="color: rgba(0, 0, 0, 0.85)"],
   [style*="color: rgba(0, 0, 0, 0.87)"],
   [style*="color: rgba(0, 0, 0, 0.9)"],
@@ -234,6 +235,7 @@
     color: var(--text-blue) !important;
   }
 
+  [style*="color: darkslategray"],
   [style*="color:#188038"] {
     color: var(--text-green) !important;
   }
@@ -241,6 +243,7 @@
   /* Background colors */
   [style*="background: white"],
   [style*="background: rgb(232, 244, 253)"],
+  [style*="background: rgb(255, 255, 255)"],
   [style*="background-color:#ffffff"],
   [style*="background-color: #FFFFFF"],
   [style*="background-color: rgb(238, 251, 255)"],
@@ -252,6 +255,10 @@
     background: var(--bg-primary) !important;
   }
 
+  [style*="background: rgb(250, 245, 255)"],
+  [style*="background: rgb(239, 246, 255)"],
+  [style*="background: rgb(255, 241, 242)"],
+  [style*="background: rgb(250, 250, 250)"],
   [style*="background-color: lightgray"],
   [style*="background-color: lemonchiffon"],
   [style*="background-color: #f2f2f2"],
@@ -264,6 +271,7 @@
     background-color: var(--bg-secondary) !important;
   }
 
+  .disabled\:tw-bg-gray-100:disabled,
   .tw-bg-gray-200,
   .hover\:tw-bg-gray-50:hover {
     background-color: var(--bg-ternary) !important;
@@ -318,6 +326,7 @@
     background-color: sienna !important;
   }
 
+  .tw-bg-red-100,
   .tw-bg-negative-20 {
     background-color: var(--bg-highlight);
   }
