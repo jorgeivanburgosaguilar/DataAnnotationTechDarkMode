@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202605240212
+@version     202606040944
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -171,6 +171,7 @@
   [style*="color: rgb(10, 10, 10)"],
   [style*="color: rgb(10, 19, 23)"],
   [style*="color: rgb(14, 16, 26)"],
+  [style*="color: rgb(15, 23, 42)"],
   [style*="color: rgb(16, 17, 18)"],
   [style*="color: rgb(16, 20, 24)"],
   [style*="color: rgb(17, 24, 39)"],
@@ -181,6 +182,7 @@
   [style*="color: rgb(29, 28, 29)"],
   [style*="color: rgb(29, 29, 29)"],
   [style*="color: rgb(31, 31, 31)"],
+  [style*="color: rgb(30, 58, 138)"],
   [style*="color: rgb(32, 33, 34)"],
   [style*="color: rgb(32, 33, 36)"],
   [style*="color: rgb(33, 33, 33)"],
@@ -191,6 +193,7 @@
   [style*="color: rgb(38, 139, 210)"],
   [style*="color: rgb(44, 62, 80)"],
   [style*="color: rgb(51, 51, 51)"],
+  [style*="color: rgb(51, 65, 85)"],
   [style*="color: rgb(52, 53, 65)"],
   [style*="color: rgb(52, 73, 94)"],
   [style*="color: rgb(55, 65, 81)"],
@@ -204,6 +207,7 @@
   [style*="color: rgb(127, 140, 141)"],
   [style*="color: rgb(153, 153, 153)"],
   [style*="color: rgb(107, 114, 128)"],
+  [style*="color: rgb(127, 29, 29)"],
   [style*="color: rgba(0, 0, 0, 0.85)"],
   [style*="color: rgba(0, 0, 0, 0.87)"],
   [style*="color: rgba(0, 0, 0, 0.9)"],
@@ -219,7 +223,11 @@
   [style*="color: rgb(204, 0, 0)"],
   [style*="color: rgb(204, 65, 37)"],
   [style*="color: rgb(133, 32, 12)"],
+  [style*="color: rgb(107, 33, 168)"],
   [style*="color: rgb(153, 0, 0)"],
+  [style*="color: rgb(153, 27, 27)"],
+  [style*="color: rgb(120, 53, 15)"],
+  [style*="color: rgb(178, 83, 187)"],
   [style*="color: rgb(166, 28, 0)"],
   [style*="color: rgb(166, 77, 121)"] {
     color: var(--text-red) !important;
@@ -236,6 +244,8 @@
   }
 
   [style*="color: darkslategray"],
+  [style*="color: rgb(30, 64, 175)"],
+  [style*="color: rgb(6, 95, 70)"],
   [style*="color:#188038"] {
     color: var(--text-green) !important;
   }
@@ -243,6 +253,7 @@
   /* Background colors */
   [style*="background: white"],
   [style*="background: rgb(232, 244, 253)"],
+  [style*="background: rgb(248, 250, 252)"],
   [style*="background: rgb(255, 255, 255)"],
   [style*="background-color:#ffffff"],
   [style*="background-color: #FFFFFF"],
@@ -279,10 +290,12 @@
   }
 
   .tw-bg-blue-100,
+  [style*="background: rgb(255, 251, 235)"],
   [style*="background-color:#dbeafe"],
   [style*="background-color: lightblue"],
   [style*="background-color: lightskyblue"],
   [style*="background-color: rgb(173, 216, 230)"],
+  [style*="background: rgb(219, 234, 254)"],
   [style*="background-color: rgb(219, 234, 254)"] {
     background-color: var(--bg-blue) !important;
   }
@@ -302,7 +315,8 @@
   }
 
   .hover\:tw-bg-primary-light-20:hover,
-  .hover\:tw-bg-blue-100:hover {
+  .hover\:tw-bg-blue-100:hover,
+  [style*="background: rgb(236, 253, 245)"] {
     background-color: var(--bg-green) !important;
   }
 
@@ -311,6 +325,8 @@
   .tw-bg-yellow-100,
   .tw-bg-yellow-200,
   .tw-bg-amber-100,
+  .tw-bg-indigo-200,
+  .tw-bg-indigo-50,
   [style*="background-color:#ffff00"],
   [style*="background-color:#dcfce7"],
   [style*="background-color:#ffe4e6"],
@@ -323,6 +339,7 @@
   [style*="background-color: lightpink"],
   [style*="background-color: rgb(255, 228, 230)"],
   [style*="background: rgb(229, 251, 249)"],
+  [style*="background: rgb(254, 242, 242)"],
   [style*="background: rgb(255, 243, 205)"] {
     background-color: sienna !important;
   }
