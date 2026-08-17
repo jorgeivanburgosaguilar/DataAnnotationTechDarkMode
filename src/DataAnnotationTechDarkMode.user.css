@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202606280130
+@version     202608162350
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -49,6 +49,8 @@
     --text-green: #0fff50;
     --check-color: #000000;
     --table-padding: 5px;
+    --template-theme-page-background: #000000 !important;
+    --template-theme-question-background: #282828 !important;
     --display-money: /*[[show-money]]*/;
     --display-help-button: /*[[show-help-button]]*/;
 
@@ -93,7 +95,7 @@
   }
 
   input[type="text"] {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     border: var(--border-primary);
   }
 
@@ -137,13 +139,13 @@
   .input-base,
   .form-control,
   .form-control:focus {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     color: var(--text-primary);
   }
 
   .form-control:disabled,
   .form-control[readonly] {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-ternary);
     opacity: 0.75;
   }
 
@@ -152,6 +154,7 @@
   }
 
   /* Text colors */
+  .\!tw-text-slate-700,
   [style*="color: black"],
   [style*="color: #000000"],
   [style*="color: #202020"],
@@ -363,6 +366,12 @@
     background-color: var(--bg-highlight);
   }
 
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: var(--text-primary) !important;
+    background-color: var(--bg-ternary) !important;
+  }
+
   /* Other styles */
   [style*="line-height:1.0"] {
     line-height: inherit !important;
@@ -460,6 +469,11 @@
   .dropdown-menu {
     background-color: var(--bg-secondary) !important;
     border: var(--border-secondary);
+  }
+
+  #Badges\/NavbarInboxBadge-hybrid-root
+    > span.tw-ml-\[5px\].tw-font-mono.tw-text-\[12px\].tw-font-normal.tw-opacity-60 {
+    color: var(--text-red) !important;
   }
 
   /* Breadcrumbs */
