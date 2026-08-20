@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202608162350
+@version     202608192315
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -50,7 +50,8 @@
     --check-color: #000000;
     --table-padding: 5px;
     --template-theme-page-background: #000000 !important;
-    --template-theme-question-background: #282828 !important;
+    --template-theme-question-background: #333333 !important;
+    --color-black-5: #282828 !important;
     --display-money: /*[[show-money]]*/;
     --display-help-button: /*[[show-help-button]]*/;
 
@@ -473,7 +474,10 @@
 
   #Badges\/NavbarInboxBadge-hybrid-root
     > span.tw-ml-\[5px\].tw-font-mono.tw-text-\[12px\].tw-font-normal.tw-opacity-60 {
-    color: var(--text-red) !important;
+    color: var(--text-primary) !important;
+    background-color: var(--text-red) !important;
+    border-radius: 50%;
+    padding: 2px 6px;
   }
 
   /* Breadcrumbs */
@@ -746,6 +750,10 @@
 
   .object-key > span {
     color: var(--text-green) !important;
+  }
+
+  div[class*="tw-bg-[var(--template-theme-question-background,#F4F4F4)]"] {
+    background-color: var(--bg-secondary) !important;
   }
 
   /* Tasks 1-column mode for small screens */
