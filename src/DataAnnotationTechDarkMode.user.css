@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202608230001
+@version     202608270050
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -33,25 +33,25 @@
   :root {
     --datdm-font-custom: /*[[font-custom]]*/;
     --font-primary: /*[[font-choice]]*/;
-    --bg-primary: #000000;
-    --bg-secondary: #333333;
-    --bg-ternary: #696969;
-    --bg-highlight: #540707;
-    --bg-blue: #000099;
-    --bg-green: #336600;
-    --border-primary: 1px solid #ffffff;
-    --border-secondary: 1px solid #606060;
-    --text-primary: #ffffff;
-    --text-secondary: #c0c0c0;
-    --text-active: #3366cc;
-    --text-red: #ff0000;
-    --text-blue: #0080ff;
-    --text-green: #0fff50;
-    --check-color: #000000;
+    --color-black: #000000;
+    --color-black-2: #282828;
+    --color-darkgray: #333333;
+    --color-gray: #696969;
+    --color-silver: #c0c0c0;
+    --color-white: #ffffff;
+    --color-red: #ff0000;
+    --color-darkred: #540707;
+    --color-blue: #0080ff;
+    --color-blue-2: #3366cc;
+    --color-darkblue: #000099;
+    --color-green: #0fff50;
+    --color-darkgreen: #336600;
+    --color-sienna: #882d17;
+    --border-primary: 1px solid #ffffff !important;
+    --border-secondary: 1px solid #606060 !important;
     --table-padding: 5px;
     --template-theme-page-background: #000000 !important;
     --template-theme-question-background: #333333 !important;
-    --color-black-5: #282828 !important;
     --display-money: /*[[show-money]]*/;
     --display-help-button: /*[[show-help-button]]*/;
 
@@ -63,20 +63,20 @@
   }
 
   body {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--color-black);
+    color: var(--color-white);
   }
 
   a,
   a:link,
   a:visited,
   a:hover {
-    color: var(--text-primary);
+    color: var(--color-white);
     text-decoration: underline;
   }
 
   a:active {
-    color: var(--text-active);
+    color: var(--color-blue-2);
   }
 
   button,
@@ -85,25 +85,25 @@
   select,
   optgroup,
   option {
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
+    background-color: var(--color-darkgray);
+    color: var(--color-white);
   }
 
   input[type="radio"],
   input[type="checkbox"] {
-    color: var(--check-color) !important;
-    border: var(--border-primary) !important;
+    color: var(--color-black-2) !important;
+    border: var(--border-primary);
   }
 
   input[type="text"] {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
     border: var(--border-primary);
   }
 
   pre,
   code {
-    background-color: var(--bg-ternary);
-    color: var(--text-primary);
+    background-color: var(--color-gray);
+    color: var(--color-white);
   }
 
   p,
@@ -115,7 +115,7 @@
   h5,
   h6,
   label {
-    color: var(--text-primary);
+    color: var(--color-white);
   }
 
   table,
@@ -125,8 +125,8 @@
   table thead,
   table tbody,
   table tfoot {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--color-black);
+    color: var(--color-white);
     border: var(--border-primary);
   }
 
@@ -140,13 +140,13 @@
   .input-base,
   .form-control,
   .form-control:focus {
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
+    background-color: var(--color-black);
+    color: var(--color-white);
   }
 
   .form-control:disabled,
   .form-control[readonly] {
-    background-color: var(--bg-ternary);
+    background-color: var(--color-gray);
     opacity: 0.75;
   }
 
@@ -200,6 +200,7 @@
   [style*="color: rgb(51, 65, 85)"],
   [style*="color: rgb(52, 53, 65)"],
   [style*="color: rgb(52, 73, 94)"],
+  [style*="color: rgb(58, 42, 104)"],
   [style*="color: rgb(55, 65, 81)"],
   [style*="color: rgb(65, 80, 92)"],
   [style*="color: rgb(66, 66, 66)"],
@@ -220,7 +221,7 @@
   [style*="color: rgba(26, 26, 26, 0.9)"],
   [style*="color: rgba(26, 26, 26, 0.8)"],
   [style*="color: rgba(107, 114, 128, 0.4)"] {
-    color: var(--text-primary) !important;
+    color: var(--color-white) !important;
   }
 
   [style*="color:red"],
@@ -238,7 +239,7 @@
   [style*="color: rgb(43, 26, 18)"] em,
   [style*="color: rgb(166, 28, 0)"],
   [style*="color: rgb(166, 77, 121)"] {
-    color: var(--text-red) !important;
+    color: var(--color-red) !important;
   }
 
   [style*="color:#e5e7eb"],
@@ -246,45 +247,49 @@
   [style*="color: rgb(17, 85, 204)"],
   [style*="color: rgb(60, 120, 216)"],
   [style*="color: rgb(61, 133, 198)"],
+  [style*="color: rgb(125, 111, 148)"],
   [style*="color: rgb(103, 78, 167)"],
   [style*="color: rgb(118, 165, 175)"] {
-    color: var(--text-blue) !important;
+    color: var(--color-blue) !important;
   }
 
   [style*="color: darkslategray"],
   [style*="color: rgb(30, 64, 175)"],
   [style*="color: rgb(6, 95, 70)"],
   [style*="color:#188038"] {
-    color: var(--text-green) !important;
+    color: var(--color-green) !important;
   }
 
   /* Background colors */
   [style*="background: white"],
   [style*="background: rgb(232, 244, 253)"],
-  [style*="background: rgb(238, 251, 255)"],
   [style*="background: rgb(248, 250, 252)"],
   [style*="background: rgb(255, 255, 255)"],
-  [style*="background-color: rgb(232, 244, 253)"],
-  [style*="background-color: rgb(238, 251, 255)"],
-  [style*="background-color: rgb(248, 250, 252)"],
+  [style*="background: rgb(250, 245, 233)"],
+  [style*="background: rgb(247, 250, 252)"],
+  [style*="background-color: rgb(241, 246, 253)"],
+  [style*="background-color: rgb(253, 249, 238)"],
+  [style*="background-color: rgb(246, 242, 252)"],
+  [style*="background-color: rgb(253, 241, 241)"],
+  [style*="background-color: rgb(250, 245, 233)"],
   [style*="background-color: rgb(255, 255, 255)"],
   [style*="background-color:#ffffff"],
-  [style*="background-color:#FFFFFF"],
-  [style*="background-color:#fafafa"],
-  [style*="background-color: #ffffff"],
   [style*="background-color: #FFFFFF"],
-  [style*="background-color: #FAFAFA"] {
-    background-color: var(--bg-primary) !important;
+  [style*="background-color: rgb(238, 251, 255)"],
+  [style*="background-color:#fafafa"] {
+    background-color: var(--color-black) !important;
   }
 
   [style*="background: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%)"] {
-    background: var(--bg-primary) !important;
+    background: var(--color-black) !important;
   }
 
   .odd\:tw-bg-gray-50,
   .\!tw-bg-white,
   .tw-bg-neutral-0,
   .tw-bg-neutral-50,
+  [style*="background: rgb(253, 250, 241)"],
+  [style*="background: rgb(253, 251, 245)"],
   [style*="background: rgb(250, 245, 255)"],
   [style*="background: rgb(239, 246, 255)"],
   [style*="background: rgb(255, 241, 242)"],
@@ -298,13 +303,13 @@
   [style*="background-color: white"],
   [style*="background: rgb(236, 235, 255)"],
   [style*="background: #cbe6b3"] {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   .disabled\:tw-bg-gray-100:disabled,
   .tw-bg-gray-200,
   .hover\:tw-bg-gray-50:hover {
-    background-color: var(--bg-ternary) !important;
+    background-color: var(--color-gray) !important;
   }
 
   .\!tw-bg-blue-600,
@@ -316,7 +321,7 @@
   [style*="background-color: rgb(173, 216, 230)"],
   [style*="background: rgb(219, 234, 254)"],
   [style*="background-color: rgb(219, 234, 254)"] {
-    background-color: var(--bg-blue) !important;
+    background-color: var(--color-darkblue) !important;
   }
 
   [style*="background: rgb(248, 249, 250)"],
@@ -326,17 +331,18 @@
   [style*="background-color: rgb(144, 238, 144)"],
   [style*="background-color: rgb(220, 252, 231)"],
   [style*="background-color: rgb(249, 250, 251)"] {
-    background-color: var(--bg-green) !important;
+    background-color: var(--color-darkgreen) !important;
   }
 
   [style*="background: linear-gradient(120deg, rgb(168, 237, 234) 0%, rgb(254, 214, 227) 100%)"] {
-    background: var(--bg-green) !important;
+    background: var(--color-darkgreen) !important;
   }
 
+  .disabled\:tw-bg-neutral-50:disabled,
   .hover\:tw-bg-primary-light-20:hover,
   .hover\:tw-bg-blue-100:hover,
   [style*="background: rgb(236, 253, 245)"] {
-    background-color: var(--bg-green) !important;
+    background-color: var(--color-darkgreen) !important;
   }
 
   .tw-bg-warning-50,
@@ -364,20 +370,21 @@
   [style*="background: rgb(229, 251, 249)"],
   [style*="background: rgb(255, 248, 225)"],
   [style*="background: rgb(254, 242, 242)"],
+  [style*="background: rgb(255, 222, 227)"],
   [style*="background: rgb(255, 243, 205)"] {
-    background-color: sienna !important;
+    background-color: var(--color-sienna) !important;
   }
 
   .tw-bg-error-50,
   .tw-bg-red-100,
   .tw-bg-negative-20 {
-    background-color: var(--bg-highlight);
+    background-color: var(--color-darkred);
   }
 
   .dropdown-item:hover,
   .dropdown-item:focus {
-    color: var(--text-primary) !important;
-    background-color: var(--bg-ternary) !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-gray) !important;
   }
 
   /* Other styles */
@@ -435,8 +442,8 @@
   .tw-flex.tw-h-10.tw-items-center.tw-justify-center.tw-rounded.tw-border.tw-border-gray-300.tw-bg-white.tw-px-5.tw-text-xl,
   .tw-fixed.tw-top-1.tw-right-\[20vw\].tw-flex.tw-h-10.tw-items-center.tw-justify-center.tw-bg-white.tw-border.tw-border-gray-300.tw-rounded.tw-px-5.tw-text-xl {
     display: var(--display-money) !important;
-    background-color: var(--bg-secondary) !important;
-    border: var(--border-secondary) !important;
+    background-color: var(--color-darkgray) !important;
+    border: var(--border-secondary);
 
     & a {
       text-decoration: none !important;
@@ -450,24 +457,24 @@
 
   /* Timer widget */
   #workers\/ExpirationTimer-hybrid-root div {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
     border: var(--border-primary);
     padding: 10px;
     margin-right: 2px;
     z-index: 999 !important;
-    border-top: var(--border-primary) !important;
+    border-top: var(--border-primary);
   }
 
   /* Enter Work Mode widget */
   .tw-bg-gradient-to-br {
     background-image: none !important;
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   /* Navbar */
   .bg-primary,
   .navbar-inverse {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   a.navbar-brand {
@@ -475,14 +482,14 @@
   }
 
   .dropdown-menu {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
     border: var(--border-secondary);
   }
 
   #Badges\/NavbarInboxBadge-hybrid-root
     > span.tw-ml-\[5px\].tw-font-mono.tw-text-\[12px\].tw-font-normal.tw-opacity-60 {
-    color: var(--text-primary) !important;
-    background-color: var(--text-red) !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-red) !important;
     border-radius: 50%;
     padding: 2px 6px;
   }
@@ -490,12 +497,12 @@
   /* Breadcrumbs */
   .breadcrumb,
   .breadcrumb-item {
-    background-color: var(--bg-ternary);
-    color: var(--text-primary) !important;
+    background-color: var(--color-gray);
+    color: var(--color-white) !important;
   }
 
   .breadcrumb-item + .breadcrumb-item::before {
-    color: var(--text-primary) !important;
+    color: var(--color-white) !important;
   }
 
   /* Work on projects (/workers/projects) */
@@ -512,36 +519,36 @@
 
   .tw-bg-white,
   .tw-bg-white-100 {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
   }
 
   .hover\:tw-bg-\[#F2E9F5\]:hover,
   .tw-bg-\[\#E5D3EB\],
   .hover\:tw-bg-\[\#F2E9F5\]:hover {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   .data-\[state\=open\]\:\!tw-bg-blue-50[data-state="open"] {
-    background-color: rgb(var(--bg-primary) / 80%) !important;
+    background-color: rgb(var(--color-black) / 80%) !important;
   }
 
   .tw-fill-zinc-300 {
-    fill: #696969 !important;
+    fill: var(--color-sienna) !important;
   }
 
   .hover\:tw-fill-zinc-600:hover {
-    fill: #ffffff !important;
+    fill: var(--color-red) !important;
   }
 
   /* Qualifications/Projects (/workers/tasks)  */
   #main,
   .worker-task {
     * {
-      color: var(--text-primary);
+      color: var(--color-white);
     }
 
     mark {
-      background-color: var(--bg-highlight) !important;
+      background-color: var(--color-darkred) !important;
     }
 
     code {
@@ -550,7 +557,7 @@
 
     button.tw-bg-white,
     button.tw-bg-white-100 {
-      background-color: var(--bg-ternary);
+      background-color: var(--color-gray);
     }
 
     h1,
@@ -561,11 +568,11 @@
     h6,
     strong,
     b {
-      color: var(--text-primary);
+      color: var(--color-white);
     }
 
     table {
-      background-color: var(--bg-primary);
+      background-color: var(--color-black);
     }
 
     table,
@@ -579,7 +586,7 @@
     }
 
     ol > li::before {
-      color: var(--text-primary);
+      color: var(--color-white);
     }
 
     .chat-history code {
@@ -591,11 +598,11 @@
     }
 
     .container {
-      background-color: var(--bg-primary);
+      background-color: var(--color-black);
     }
 
     .bot-msg {
-      background-color: var(--bg-primary);
+      background-color: var(--color-black);
     }
 
     .pre {
@@ -604,7 +611,7 @@
 
     .opa-preview,
     .opa-preview-pixel-fullscreen {
-      background-color: var(--bg-primary) !important;
+      background-color: var(--color-black) !important;
     }
   }
 
@@ -633,46 +640,46 @@
   .with-tailwind-u4xenr-control,
   .with-tailwind-18a0yo6-control,
   .with-tailwind-1nmdiq5-menu {
-    background-color: var(--bg-secondary);
+    background-color: var(--color-darkgray);
     border: var(--border-primary);
   }
 
   .with-tailwind-1nmdiq5-menu div {
-    color: var(--text-primary);
+    color: var(--color-white);
   }
 
   .with-tailwind-1nmdiq5-menu div div:hover {
-    background-color: var(--bg-ternary);
+    background-color: var(--color-gray);
     text-decoration: underline;
   }
 
   .with-tailwind-1dimb5e-singleValue,
   .with-tailwind-14byfmz-placeholder {
-    color: var(--text-primary);
+    color: var(--color-white);
   }
 
   .cm-editor {
-    background-color: var(--bg-secondary);
-    color: var(--text-primary);
+    background-color: var(--color-darkgray);
+    color: var(--color-white);
   }
 
   .cm-gutters,
   .cm-activeLineGutter {
-    background-color: var(--bg-ternary) !important;
+    background-color: var(--color-gray) !important;
   }
 
   .cm-gutters {
-    border-right: var(--border-secondary) !important;
+    border-right: var(--border-secondary);
   }
 
   .cm-content,
   .cm-line,
   .cm-activeLine {
-    caret-color: var(--text-primary) !important;
+    caret-color: var(--color-white) !important;
   }
 
   .list-group-item {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
     border: var(--border-primary);
   }
 
@@ -681,7 +688,7 @@
   }
 
   .hover\:tw-bg-white:hover {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
   }
 
   .after\:tw-bg-gray-300\/30,
@@ -694,11 +701,11 @@
   }
 
   .tw-bg-gray-50 {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
   }
 
   .list-group-item.active.disabled {
-    background-color: var(--bg-primary);
+    background-color: var(--color-black);
   }
 
   .list-group-item.disabled {
@@ -706,29 +713,29 @@
   }
 
   .tw-bg-\[\#F4F4F4\] {
-    background-color: var(--bg-secondary);
+    background-color: var(--color-darkgray);
   }
 
   .tw-bg-blue-50 {
-    background-color: var(--bg-blue);
+    background-color: var(--color-darkblue);
   }
 
   .tw-bg-green-50,
   .tw-bg-green-100 {
-    background-color: var(--bg-green);
+    background-color: var(--color-darkgreen);
   }
 
   .tw-text-green-700 {
-    color: var(--text-green) !important;
+    color: var(--color-green) !important;
   }
 
   .surge-wysiwyg {
-    --tw-prose-headings: var(--text-primary) !important;
+    --tw-prose-headings: var(--color-white) !important;
 
-    color: var(--text-primary) !important;
+    color: var(--color-white) !important;
 
     & ::marker {
-      color: var(--text-primary) !important;
+      color: var(--color-white) !important;
     }
 
     & table {
@@ -747,20 +754,20 @@
   .monaco-editor-background,
   .monaco-editor .margin,
   .sticky-widget {
-    background-color: var(--bg-primary) !important;
+    background-color: var(--color-black) !important;
   }
 
   .tw-bg-gray-100\/30,
   .tw-bg-green-50\/50 {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   .object-key > span {
-    color: var(--text-green) !important;
+    color: var(--color-green) !important;
   }
 
   div[class*="tw-bg-[var(--template-theme-question-background,#F4F4F4)]"] {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   /* Tasks 1-column mode for small screens */
@@ -832,7 +839,7 @@
   }
 
   .tw-bg-gray-100:hover {
-    background-color: var(--bg-ternary);
+    background-color: var(--color-gray);
   }
 
   .tw-text-size-table-header {
@@ -848,7 +855,7 @@
     }
 
     .table {
-      color: var(--text-primary);
+      color: var(--color-white);
     }
 
     .tbody,
@@ -860,12 +867,12 @@
 
   [role="dialog"] {
     .tw-bg-black-50 {
-      background-color: var(--bg-secondary);
+      background-color: var(--color-darkgray);
     }
 
     .tw-bg-white-100,
     .tw-bg-white {
-      background-color: var(--bg-primary) !important;
+      background-color: var(--color-black) !important;
     }
 
     button {
@@ -882,7 +889,7 @@
 
   /* Transfer funds (/workers/payments)  */
   .card {
-    background-color: var(--bg-secondary);
+    background-color: var(--color-darkgray);
   }
 
   .tw-bg-neutral-100 {
@@ -894,22 +901,22 @@
   }
 
   #payment-tabs .nav-link {
-    color: var(--text-primary) !important;
+    color: var(--color-white) !important;
   }
 
   #payment-tabs .nav-link.active {
-    color: var(--text-blue) !important;
+    color: var(--color-blue) !important;
   }
 
   /* Referrals */
   .tw-bg-orange-50 {
-    background-color: var(--bg-secondary) !important;
+    background-color: var(--color-darkgray) !important;
   }
 
   /* Inbox */
   .tw-bg-white-90,
   .tw-bg-gray-100 {
-    background-color: var(--bg-secondary);
+    background-color: var(--color-darkgray);
   }
 
   .tw-text-black-40,
@@ -920,18 +927,18 @@
 
   #root [style*="color: white"],
   #root [style*="color: rgb(248, 248, 248)"] {
-    color: var(--text-primary) !important;
-    background-color: var(--bg-primary) !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-black) !important;
   }
 
   /* Profile (/me) */
   .btn-default {
-    background-color: var(--bg-secondary);
+    background-color: var(--color-darkgray);
     color: inherit;
   }
 
   .btn-default:hover {
-    background-color: var(--bg-ternary);
+    background-color: var(--color-gray);
     color: inherit;
   }
 
@@ -943,8 +950,8 @@
 
   /* Documents (/publish) */
   .doc-content {
-    color: var(--text-primary) !important;
-    background-color: var(--bg-primary) !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-black) !important;
     line-height: unset !important;
 
     & h1,
@@ -954,8 +961,8 @@
     & span,
     & li,
     & .last-modified {
-      color: var(--text-primary) !important;
-      background-color: var(--bg-primary) !important;
+      color: var(--color-white) !important;
+      background-color: var(--color-black) !important;
       line-height: unset !important;
     }
 
@@ -966,8 +973,8 @@
       & thead,
       & tbody,
       & tfoot {
-        background-color: var(--bg-primary) !important;
-        color: var(--text-primary);
+        background-color: var(--color-black) !important;
+        color: var(--color-white);
         border: var(--border-primary) !important;
         overflow-wrap: break-word;
       }
