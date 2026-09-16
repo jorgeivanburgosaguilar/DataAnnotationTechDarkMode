@@ -2,7 +2,7 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202609122321
+@version     202609160152
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
@@ -36,6 +36,7 @@
     --color-black: #000000;
     --color-black-2: #282828;
     --color-darkgray: #333333;
+    --color-darkgray-2: #484848;
     --color-gray: #696969;
     --color-silver: #c0c0c0;
     --color-white: #ffffff;
@@ -47,6 +48,7 @@
     --color-green: #0fff50;
     --color-darkgreen: #336600;
     --color-sienna: #882d17;
+    --color-neutral-0: #000000;
     --border-primary: 1px solid #ffffff !important;
     --border-secondary: 1px solid #606060 !important;
     --table-padding: 5px;
@@ -144,14 +146,14 @@
     color: var(--color-white);
   }
 
+  .input-base:disabled {
+    background-color: var(--color-darkgray-2);
+  }
+
   .form-control:disabled,
   .form-control[readonly] {
     background-color: var(--color-gray);
     opacity: 0.75;
-  }
-
-  .input-base {
-    margin-bottom: 5px;
   }
 
   /* Text colors */
@@ -209,6 +211,7 @@
   [style*="color: rgb(67, 67, 67)"],
   [style*="color: rgb(68, 71, 70)"],
   [style*="color: rgb(89, 89, 89)"],
+  [style*="color: rgb(93, 64, 55)"],
   [style*="color: rgb(103, 78, 167)"],
   [style*="color: rgb(133, 153, 0)"],
   [style*="color: rgb(127, 140, 141)"],
@@ -263,6 +266,10 @@
   }
 
   /* Background colors */
+  .tw-bg-white,
+  .tw-bg-white-100,
+  .tw-bg-neutral-0,
+  .tw-bg-\[\#EAE6DE\],
   [style*="background: white"],
   [style*="background: rgb(232, 244, 253)"],
   [style*="background: rgb(248, 250, 252)"],
@@ -286,10 +293,14 @@
     background: var(--color-black) !important;
   }
 
+  .tw-bg-neutral-50,
+  .tw-bg-neutral-100 {
+    background-color: var(--color-darkgray-2) !important;
+  }
+
   .odd\:tw-bg-gray-50,
   .\!tw-bg-white,
-  .tw-bg-neutral-0,
-  .tw-bg-neutral-50,
+  [style*="background: rgb(251, 250, 255)"],
   [style*="background: rgb(253, 250, 241)"],
   [style*="background: rgb(253, 251, 245)"],
   [style*="background: rgb(250, 245, 255)"],
@@ -368,6 +379,8 @@
   [style*="background-color:#f6b26b"],
   [style*="background-color: lightpink"],
   [style*="background-color: rgb(255, 228, 230)"],
+  [style*="background: rgb(255, 247, 237)"],
+  [style*="background: rgb(253, 247, 248)"],
   [style*="background: rgb(255, 249, 241)"],
   [style*="background: rgb(229, 251, 249)"],
   [style*="background: rgb(255, 248, 225)"],
@@ -441,8 +454,8 @@
   }
 
   /* Money widget */
-  .tw-flex.tw-h-10.tw-items-center.tw-justify-center.tw-rounded.tw-border.tw-border-gray-300.tw-bg-white.tw-px-5.tw-text-xl,
-  .tw-fixed.tw-top-1.tw-right-\[20vw\].tw-flex.tw-h-10.tw-items-center.tw-justify-center.tw-bg-white.tw-border.tw-border-gray-300.tw-rounded.tw-px-5.tw-text-xl {
+  #workers\/DynamicBalance-hybrid-root
+    > div.tw-flex.tw-h-10.tw-items-center.tw-justify-center.tw-rounded.tw-border.tw-border-neutral-100.tw-bg-neutral-0.tw-px-5.tw-text-xl {
     display: var(--display-money) !important;
     background-color: var(--color-darkgray) !important;
     border: var(--border-secondary);
@@ -493,7 +506,7 @@
     color: var(--color-white) !important;
     background-color: var(--color-red) !important;
     border-radius: 50%;
-    padding: 2px 6px;
+    padding: 3px 7px;
   }
 
   /* Breadcrumbs */
@@ -508,30 +521,15 @@
   }
 
   /* Work on projects (/workers/projects) */
-  .tVEIx::after,
-  .tVEIx::before,
-  .kCfoZC::after,
-  .kCfoZC::before {
-    background: none !important;
+  div[role="tab"] span.tw-ml-2.tw-rounded-full.tw-px-2.tw-py-1.tw-text-xs.tw-bg-neutral-100.tw-text-neutral-800 {
+    color: var(--color-white) !important;
+    background-color: var(--color-darkgray-2) !important;
+    border-radius: 50%;
+    padding: 3px 7px;
   }
 
-  #workers\/WorkerProjectsTable-hybrid-root td .tw-p-4 {
-    padding: 0.9rem;
-  }
-
-  .tw-bg-white,
-  .tw-bg-white-100 {
-    background-color: var(--color-black);
-  }
-
-  .hover\:tw-bg-\[#F2E9F5\]:hover,
-  .tw-bg-\[\#E5D3EB\],
-  .hover\:tw-bg-\[\#F2E9F5\]:hover {
-    background-color: var(--color-darkgray) !important;
-  }
-
-  .data-\[state\=open\]\:\!tw-bg-blue-50[data-state="open"] {
-    background-color: rgb(var(--color-black) / 80%) !important;
+  .hover\:tw-bg-neutral-50:hover {
+    background-color: var(--color-black) !important;
   }
 
   .tw-fill-zinc-300 {
@@ -892,10 +890,6 @@
   /* Transfer funds (/workers/payments)  */
   .card {
     background-color: var(--color-darkgray);
-  }
-
-  .tw-bg-neutral-100 {
-    background-color: inherit;
   }
 
   #payment-tabs {
