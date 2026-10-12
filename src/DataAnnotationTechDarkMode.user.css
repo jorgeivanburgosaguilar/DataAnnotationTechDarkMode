@@ -2,15 +2,15 @@
 @name        Data Annotation Tech Dark Mode
 @description A dark theme for Data Annotation Tech with custom font support.
 @namespace   jorgeivanburgosaguilar
-@version     202610080005
+@version     202610120021
 @homepageURL https://github.com/jorgeivanburgosaguilar/DataAnnotationTechDarkMode
 @license     Unlicense
 @author      Jorge Ivan Burgos Aguilar
 @advanced dropdown font-choice "Font" {
   datdefault "DAT Default" <<<EOT
   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" EOT;
-  intelonemonomedium "Intel One Mono Medium" <<<EOT
-  "IntoneMono NF Medium", "Intel One Mono Medium", monospace EOT;
+  intelonemonomedium "Intel One Mono" <<<EOT
+  "IntoneMono NF", "Intel One Mono", monospace EOT;
   custom "Custom" <<<EOT
   var(--datdm-font-custom) EOT;
 }
@@ -144,6 +144,14 @@
     padding: var(--table-padding) !important;
   }
 
+  .tw-bg-\[var\(--template-theme-page-background\, rgb\(var\(--color-neutral-0\)\)\)\] {
+    background-color: var(--color-black) !important;
+  }
+
+  #main[data-template-theme="paper"] {
+    --template-theme-page-background: var(--color-black) !important;
+  }
+
   /* Forms */
   .input-base,
   .form-control,
@@ -164,6 +172,7 @@
 
   /* Text colors */
   .gondor-wysiwyg,
+  .tw-text-neutral-700,
   .\!tw-text-slate-700,
   [style*="color: black"],
   [style*="color: #000000"],
@@ -191,6 +200,7 @@
   [style*="color: rgb(25, 118, 210)"],
   [style*="color: rgb(26, 26, 26)"],
   [style*="color: rgb(26, 28, 31)"],
+  [style*="color: rgb(26, 60, 52)"],
   [style*="color: rgb(27, 28, 29)"],
   [style*="color: rgb(28, 28, 28)"],
   [style*="color: rgb(29, 28, 29)"],
@@ -215,20 +225,25 @@
   [style*="color: rgb(52, 73, 94)"],
   [style*="color: rgb(55, 65, 81)"],
   [style*="color: rgb(58, 42, 104)"],
+  [style*="color: rgb(58, 71, 86)"],
   [style*="color: rgb(60, 64, 67)"],
   [style*="color: rgb(65, 80, 92)"],
   [style*="color: rgb(66, 66, 66)"],
   [style*="color: rgb(67, 67, 67)"],
   [style*="color: rgb(68, 71, 70)"],
+  [style*="color: rgb(74, 58, 5)"],
   [style*="color: rgb(89, 89, 89)"],
   [style*="color: rgb(93, 64, 55)"],
+  [style*="color: rgb(93, 107, 122)"],
   [style*="color: rgb(103, 78, 167)"],
   [style*="color: rgb(107, 114, 128)"],
+  [style*="color: rgb(122, 91, 0)"],
   [style*="color: rgb(127, 29, 29)"],
   [style*="color: rgb(127, 140, 141)"],
   [style*="color: rgb(133, 153, 0)"],
   [style*="color: rgb(139, 148, 158)"],
   [style*="color: rgb(153, 153, 153)"],
+  [style*="color: rgb(180, 83, 9)"],
   [style*="color: rgba(0, 0, 0, 0.85)"],
   [style*="color: rgba(0, 0, 0, 0.87)"],
   [style*="color: rgba(0, 0, 0, 0.9)"],
@@ -260,6 +275,7 @@
   [style*="color:#0000ff"],
   [style*="color:#e5e7eb"],
   [style*="color: rgb(17, 85, 204)"],
+  [style*="color: rgb(28, 69, 135)"],
   [style*="color: rgb(55, 48, 163)"],
   [style*="color: rgb(60, 120, 216)"],
   [style*="color: rgb(61, 133, 198)"],
@@ -283,11 +299,14 @@
   .tw-bg-neutral-950,
   .tw-bg-white,
   .tw-bg-white-100,
+  .tw-bg-template-page,
   [style*="background: white"],
   [style*="background: rgb(232, 244, 253)"],
   [style*="background: rgb(247, 250, 252)"],
+  [style*="background: rgb(245, 249, 252)"],
   [style*="background: rgb(248, 250, 252)"],
   [style*="background: rgb(250, 245, 233)"],
+  [style*="background: rgb(250, 251, 252)"],
   [style*="background: rgb(255, 255, 255)"],
   [style*="background:#ffffff"],
   [style*="background-color:#fafafa"],
@@ -303,10 +322,13 @@
     background-color: var(--color-black) !important;
   }
 
+  [style*="background: rgb(251, 252, 253)"],
   [style*="background: linear-gradient(135deg, rgb(245, 247, 250) 0%, rgb(195, 207, 226) 100%)"] {
     background: var(--color-black) !important;
   }
 
+  .gondor-wysiwyg,
+  .tw-bg-template-card,
   .tw-bg-neutral-100,
   .tw-bg-neutral-50,
   [style*="background: rgb(13, 17, 23)"] {
@@ -347,7 +369,6 @@
   .tw-bg-blue-100,
   [style*="background: rgb(219, 234, 254)"],
   [style*="background: rgb(238, 240, 255)"],
-  [style*="background: rgb(255, 251, 235)"],
   [style*="background-color: lightblue"],
   [style*="background-color: lightskyblue"],
   [style*="background-color:#dbeafe"],
@@ -391,6 +412,7 @@
   .tw-bg-yellow-100,
   .tw-bg-yellow-200,
   .tw-bg-yellow-50,
+  [style*="background: rgb(255, 251, 235)"],
   [style*="background: rgb(229, 251, 249)"],
   [style*="background: rgb(253, 242, 242)"],
   [style*="background: rgb(253, 246, 231)"],
@@ -401,6 +423,7 @@
   [style*="background: rgb(255, 247, 237)"],
   [style*="background: rgb(255, 248, 225)"],
   [style*="background: rgb(255, 249, 241)"],
+  [style*="background: rgb(255, 250, 240)"],
   [style*="background:#fdf6ec"],
   [style*="background-color: lightpink"],
   [style*="background-color:#bfdeb1"],
@@ -419,6 +442,7 @@
   .tw-bg-error-50,
   .tw-bg-negative-20,
   .tw-bg-red-100,
+  [style*="background: rgb(253, 236, 234)"],
   [style*="background: rgb(252, 237, 237)"] {
     background-color: var(--color-darkred) !important;
   }
